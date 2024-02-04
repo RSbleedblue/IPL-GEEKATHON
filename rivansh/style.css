@@ -1,0 +1,9 @@
+
+table tbody tr td:nth-child(6) {
+    background: #8080806f; 
+    color: white;
+    text-align: center;
+  }
+  .tableMain{
+    margin-top: 10vh;
+  }
