@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.body{
+    width: 100vw;
+    
+}
 .allsection{ 
     background-image: url(https://www.iplt20.com/assets/images/bottom-section-bg.svg);
     background-repeat: repeat-y; 
@@ -10,7 +14,7 @@
 }
 .header{
     height: 15vh;
-    max-width: 100vw;
+    max-width: 100%;
     background-color: rgb(8, 16, 51);
     padding: 30px;
 
@@ -18,7 +22,7 @@
 .matchTitle{
     color: #fff;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 20px;
 }
 .absolute{
 padding-left: 650px;
@@ -93,12 +97,112 @@ background-color:white;
     display: flex;
     height: 32vh;
     width: 70vw;
-   
     margin: 0px;
     /* background-color: white;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 1px  rgb(84, 83, 83), -0px 0px 1px  rgb(84, 83, 83); */
+}
+@media  only screen and (max-width:768px) {
+    .matchTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .matchTitle h2{
+      display: flex;
+     margin-top: 10px;
+    }
+    .header{
+        width: 100vw;
+    }
+    .salector{
+        display: flex;
+        flex-direction: column;
+    }
+    .absolute{
+        /* height: 40px; */
+        width: 700px;
+        padding-left: 0px;
+        padding-top: -200px;
+    }
+    .threePoint{
+        border-radius: 10px;
+        background-color:white;
+        width: 700px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        /* top: 10px; */
+        box-shadow: 0px 0px 1px  rgb(84, 83, 83), -0px 0px 1px  rgb(84, 83, 83);
+    }
+    .gender{
+        margin-left: 40px;
+    }
+    .allTeam{
+        margin-left: 20px;
+    }
+    .allvenue{
+        margin-left: -10px;
+    }
+    .season{
+        margin-left: 40px;
+    }
+    
+   
+   .venue0{
+    width: 40vw;
+    
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px  rgb(145, 143, 143), -0px 0px 1px  rgb(84, 83, 83);
+    /* margin-left: -1000px; */
+     /* position: relative; */
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     align-items: start;
+   }
+    .first{
+        height: 100px;
+        width: 150px;
+    }
+    .second1{
+        margin-left: -40px;
+        height: 150px;
+        width: 500px;
+    }
+    .third{
+        height: 150px;
+        width: 150px;
+        margin-left: -100px;
+    }
+ .img1 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -2000px;
+ }
+ .img2 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -2000px;
+ }
+ .title h4{
+    width: 20px;
+    margin-top: -82px;
+ }
+ .versus img {
+    margin-top: -800px;
+ }
+ .first p{
+    font-weight: 10px;
+    font-size: 5px;
+ }
+
 }
 .venue0{
     /* height: 120vh; */
@@ -106,9 +210,12 @@ background-color:white;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 1px  rgb(145, 143, 143), -0px 0px 1px  rgb(84, 83, 83);
-   margin: 50px 300px;
+   margin: 50px 300px; 
+   position: relative;
+   padding: -100px;
+   /* border: 1px solid black;
 }
-
+ 
 .first{
     height: 250px;
     width: 250px;
@@ -116,23 +223,33 @@ background-color:white;
 }
 .first p{
     width: 150px;
+    /* height: 200px;  */
     font-family: 'Bebas Neue';
     font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 15px;
     line-height: 22px;
     color: black;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
-/* .afterfirst{
+.afterfirst{
     height: 250px;
-    width: 5px;
+    width: 1px;
     padding-right: 20px;
     display: flex;
     text-align: start;
     transform: rotate(90deg);
-} */
+    position: absolute;
+    margin-left: 242px;
+}
+.dottedLine{
+    position: absolute;
+    z-index: 1;
+    margin-top: 165px;
+    margin-left: -115px;
+    /* height: 100px; */
+}
 .second2{
     height: 190px;
     width: 450px;
@@ -191,7 +308,9 @@ background-color:white;
     line-height: 13px;
     color: #282B32;
     border-radius: 2px;
-    padding: 8px;
+    /* padding: 8px; */
+    padding-left: 0px;
+    padding-top: 8px;
  }
 
  .final1{
@@ -222,3 +341,4 @@ background-color:white;
     border-top: 2px dotted green;
     transform: rotate(90deg);
 }
+
