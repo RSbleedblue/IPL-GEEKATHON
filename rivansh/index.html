@@ -21,17 +21,17 @@
             <a href="#" class="hover:text-gray-300">More</a>
         </div>
     </div>
-</nav>
-        <div class="mx-auto flex items-center space-x-8 relative bg-cover " style="background-image: url('./src/assests/M.Chinnaswamy-Stadium.jpg'); background-color: rgb(0, 0, 0);">
-          
-          <div class="absolute inset-0 bg-black opacity-70">
-          </div>
-          <div class="flex-shrink-0 z-10">
-            <img class="h-80 w-80 rounded-full" src="./src/assests/viratKohli.png" alt="Player Image">
-          </div>
-          <div class="flex flex-col z-10 ">
-            <div class="flex items-center mb-4">
-                <div class="text-5xl font-bold text-white mr-6">Virat Kohli</div>
+  </nav>
+  <div class="mx-auto flex items-center space-x-8 relative bg-cover " style="background-image: url('./src/assests/background.jpg'); background-color: rgb(0, 0, 0);">      
+    <div class="absolute inset-0 bg-black opacity-80">
+    
+    </div>
+    <div class="flex-shrink-0 z-10">
+      <img class="h-80 w-80 rounded-full" src="./src/assests/viratKohli.png" alt="Player Image">
+    </div>
+    <div class="flex flex-col z-10 ">
+      <div class="flex items-center mb-4">
+                    <div class="text-5xl font-bold text-white mr-6">Virat Kohli</div>
                 <img class="h-12 w-12 rounded-full bg-white" src="./src/assests/RCBoutline.png" alt="RCB Logo">
             </div>
             <div class="flex">
@@ -61,8 +61,60 @@
                 </div>
             </div>
           </div>
-        </div>  
-        <div class="container mx-auto flex justify-center tableMain">
+        </div>
+        <div class="container mx-auto flex justify-center">
+          
+          <div class="container mx-auto mt-8 w-[80%]">
+            
+            <div class="grid grid-cols-5 gap-1 items-center">
+              
+                <div class="col-span-1">
+                    <select class="p-2 w-[90%] border rounded tableMain">
+                        <option>Season</option>
+                        <option>Season 2023</option>
+                        <option>Season 2022</option>
+                        <option>Season 2021</option>
+                        <option>Season 2020</option>
+                    </select>
+                </div>
+                <div class="col-span-1">
+                    <select class="p-2 w-[90%] border rounded tableMain">
+                        <option>Player</option>
+                        <option>Overseas</option>
+                        <option>Indian</option>
+                        <option>Uncapped</option>  
+                    </select>
+                </div>
+                <div class="col-span-1">
+                    <select class="p-2 w-[90%] border rounded tableMain">
+                        <option>Orange Cap</option>
+                        <option>Most Runs</option>
+                        <option>Most Wickets</option>
+                        <option>Most Catches</option>
+                        
+                    </select>
+                </div>
+                <div class="col-span-1 w-[90%]">
+                    <select class="p-2 border rounded tableMain">
+                        <option>All Teams</option>
+                        <option>GT</option>
+                        <option>RCB</option>
+                        <option>SRH</option>
+                    </select>
+                </div>
+                <div class="col-span-1 w-[100%] relative searchBar">
+                    <div class="flex items-center">
+                        <input type="text" placeholder="Search by player name" class="p-2 pl-8 border rounded w-full">
+                        <div class="absolute left-2 top-2 searchIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" class="h-6 w-6 text-gray-400">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 10-14 0 7 7 0 0014 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>        
           <div class="p-4 bg-white shadow-md rounded-lg">
             <div class="flex items-center justify-between mb-4 relative z-10 ">
             </div>          
@@ -74,12 +126,12 @@
                   <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">MAT</th>
                   <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">INNS</th>
                   <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">NO</th>
-                  <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">RUNS</th>
                   <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">HS</th>
+                  <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">RUNS</th>
                   <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">AVG</th>
-                  <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">BF</th>
                   <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">SR</th>
-                  <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">150</th>
+                  <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">BF</th>
+                  <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">100</th>
                   <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">4s</th>
                   <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">6s</th>
                 </tr>
@@ -98,7 +150,7 @@
                   </td>
                   <td class="py-3 px-4 text-xs">17</td>
                   <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
+                  <td class="py-3 px-4 text-xs">112*</td>
                   <td class="py-3 px-4 text-xs">890</td>
                   <td class="py-3 px-4 text-xs">59.33</td>
                   <td class="py-3 px-4 text-xs">157.80</td>
@@ -108,21 +160,43 @@
                   <td class="py-3 px-4 text-xs">33</td>
                 </tr>
                 <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
+                  <td class="py-3 px-4 text-xs font-medium">2</td>
                   <td class="py-3 px-4 text-xs font-medium">
                     <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/94.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Faf Du Plesis</span>
+                    </div>
+                  </td>
+                  <td class="py-3 px-4 text-xs">
+                    10
+                  </td>
+                  <td class="py-3 px-4 text-xs">12</td>
+                  <td class="py-3 px-4 text-xs">10</td>
+                  <td class="py-3 px-4 text-xs">99*</td>
+                  <td class="py-3 px-4 text-xs">790</td>
+                  <td class="py-3 px-4 text-xs">45.33</td>
+                  <td class="py-3 px-4 text-xs">190.80</td>
+                  <td class="py-3 px-4 text-xs">12</td>
+                  <td class="py-3 px-4 text-xs">2</td>
+                  <td class="py-3 px-4 text-xs">81</td>
+                  <td class="py-3 px-4 text-xs">22</td>
+                </tr>
+                <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                  <td class="py-3 px-4 text-xs font-medium">3</td>
+                  <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/62.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Shubhman Gill</span>
                     </div>
                   </td>
                   <td class="py-3 px-4 text-xs">
                     10
                   </td>
                   <td class="py-3 px-4 text-xs">17</td>
-                  <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
+                  <td class="py-3 px-4 text-xs">5</td>
+                  <td class="py-3 px-4 text-xs">120</td>
+                  <td class="py-3 px-4 text-xs">790</td>
+                  <td class="py-3 px-4 text-xs">53.33</td>
                   <td class="py-3 px-4 text-xs">157.80</td>
                   <td class="py-3 px-4 text-xs">10</td>
                   <td class="py-3 px-4 text-xs">3</td>
@@ -130,33 +204,33 @@
                   <td class="py-3 px-4 text-xs">33</td>
                 </tr>
                 <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
+                  <td class="py-3 px-4 text-xs font-medium">4</td>
                   <td class="py-3 px-4 text-xs font-medium">
                     <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/601.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Devon Conway</span>
                     </div>
                   </td>
                   <td class="py-3 px-4 text-xs">
                     10
                   </td>
-                  <td class="py-3 px-4 text-xs">17</td>
                   <td class="py-3 px-4 text-xs">14</td>
+                  <td class="py-3 px-4 text-xs">14</td>
+                  <td class="py-3 px-4 text-xs">142</td>
+                  <td class="py-3 px-4 text-xs">720</td>
+                  <td class="py-3 px-4 text-xs">44.33</td>
+                  <td class="py-3 px-4 text-xs">140.2</td>
+                  <td class="py-3 px-4 text-xs">11</td>
                   <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
-                  <td class="py-3 px-4 text-xs">157.80</td>
-                  <td class="py-3 px-4 text-xs">10</td>
-                  <td class="py-3 px-4 text-xs">3</td>
-                  <td class="py-3 px-4 text-xs">85</td>
-                  <td class="py-3 px-4 text-xs">33</td>
+                  <td class="py-3 px-4 text-xs">89</td>
+                  <td class="py-3 px-4 text-xs">16</td>
                 </tr>
                 <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
+                  <td class="py-3 px-4 text-xs font-medium">5</td>
                   <td class="py-3 px-4 text-xs font-medium">
                     <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/533.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Yasashwi Jaiswal</span>
                     </div>
                   </td>
                   <td class="py-3 px-4 text-xs">
@@ -164,21 +238,21 @@
                   </td>
                   <td class="py-3 px-4 text-xs">17</td>
                   <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
-                  <td class="py-3 px-4 text-xs">157.80</td>
-                  <td class="py-3 px-4 text-xs">10</td>
-                  <td class="py-3 px-4 text-xs">3</td>
-                  <td class="py-3 px-4 text-xs">85</td>
-                  <td class="py-3 px-4 text-xs">33</td>
+                  <td class="py-3 px-4 text-xs">89</td>
+                  <td class="py-3 px-4 text-xs">682</td>
+                  <td class="py-3 px-4 text-xs">42.2</td>
+                  <td class="py-3 px-4 text-xs">170</td>
+                  <td class="py-3 px-4 text-xs">11</td>
+                  <td class="py-3 px-4 text-xs">0</td>
+                  <td class="py-3 px-4 text-xs">89</td>
+                  <td class="py-3 px-4 text-xs">29</td>
                 </tr>
                 <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
+                  <td class="py-3 px-4 text-xs font-medium">6</td>
                   <td class="py-3 px-4 text-xs font-medium">
                     <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/174.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Surya Kumar Yadav</span>
                     </div>
                   </td>
                   <td class="py-3 px-4 text-xs">
@@ -186,168 +260,146 @@
                   </td>
                   <td class="py-3 px-4 text-xs">17</td>
                   <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
-                  <td class="py-3 px-4 text-xs">157.80</td>
+                  <td class="py-3 px-4 text-xs">118</td>
+                  <td class="py-3 px-4 text-xs">659</td>
+                  <td class="py-3 px-4 text-xs">48.2</td>
+                  <td class="py-3 px-4 text-xs">167</td>
                   <td class="py-3 px-4 text-xs">10</td>
-                  <td class="py-3 px-4 text-xs">3</td>
-                  <td class="py-3 px-4 text-xs">85</td>
-                  <td class="py-3 px-4 text-xs">33</td>
+                  <td class="py-3 px-4 text-xs">1</td>
+                  <td class="py-3 px-4 text-xs">102</td>
+                  <td class="py-3 px-4 text-xs">40</td>
                 </tr>
                 <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
+                  <td class="py-3 px-4 text-xs font-medium">7</td>
                   <td class="py-3 px-4 text-xs font-medium">
                     <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/102.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>RituRaj Gaikwad</span>
                     </div>
                   </td>
                   <td class="py-3 px-4 text-xs">
                     10
                   </td>
                   <td class="py-3 px-4 text-xs">17</td>
-                  <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
-                  <td class="py-3 px-4 text-xs">157.80</td>
+                  <td class="py-3 px-4 text-xs">11</td>
+                  <td class="py-3 px-4 text-xs">78</td>
+                  <td class="py-3 px-4 text-xs">610</td>
+                  <td class="py-3 px-4 text-xs">67.2</td>
+                  <td class="py-3 px-4 text-xs">180.3</td>
                   <td class="py-3 px-4 text-xs">10</td>
-                  <td class="py-3 px-4 text-xs">3</td>
-                  <td class="py-3 px-4 text-xs">85</td>
-                  <td class="py-3 px-4 text-xs">33</td>
+                  <td class="py-3 px-4 text-xs">0</td>
+                  <td class="py-3 px-4 text-xs">90</td>
+                  <td class="py-3 px-4 text-xs">49</td>
                 </tr>
                 <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
+                  <td class="py-3 px-4 text-xs font-medium">8</td>
                   <td class="py-3 px-4 text-xs font-medium">
                     <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/214.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>David Warner</span>
                     </div>
                   </td>
                   <td class="py-3 px-4 text-xs">
                     10
                   </td>
                   <td class="py-3 px-4 text-xs">17</td>
-                  <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
-                  <td class="py-3 px-4 text-xs">157.80</td>
+                  <td class="py-3 px-4 text-xs">17</td>
+                  <td class="py-3 px-4 text-xs">134</td>
+                  <td class="py-3 px-4 text-xs">590</td>
+                  <td class="py-3 px-4 text-xs">38.7</td>
+                  <td class="py-3 px-4 text-xs">132.9</td>
                   <td class="py-3 px-4 text-xs">10</td>
-                  <td class="py-3 px-4 text-xs">3</td>
-                  <td class="py-3 px-4 text-xs">85</td>
-                  <td class="py-3 px-4 text-xs">33</td>
+                  <td class="py-3 px-4 text-xs">1</td>
+                  <td class="py-3 px-4 text-xs">78</td>
+                  <td class="py-3 px-4 text-xs">25</td>
                 </tr>
                 <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
+                  <td class="py-3 px-4 text-xs font-medium">9</td>
                   <td class="py-3 px-4 text-xs font-medium">
                     <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/152.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Rinku Singh</span>
                     </div>
                   </td>
                   <td class="py-3 px-4 text-xs">
                     10
                   </td>
-                  <td class="py-3 px-4 text-xs">17</td>
-                  <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
-                  <td class="py-3 px-4 text-xs">157.80</td>
+                  <td class="py-3 px-4 text-xs">13</td>
                   <td class="py-3 px-4 text-xs">10</td>
-                  <td class="py-3 px-4 text-xs">3</td>
-                  <td class="py-3 px-4 text-xs">85</td>
-                  <td class="py-3 px-4 text-xs">33</td>
+                  <td class="py-3 px-4 text-xs">99</td>
+                  <td class="py-3 px-4 text-xs">509</td>
+                  <td class="py-3 px-4 text-xs">45.9</td>
+                  <td class="py-3 px-4 text-xs">189.9</td>
+                  <td class="py-3 px-4 text-xs">10</td>
+                  <td class="py-3 px-4 text-xs">0</td>
+                  <td class="py-3 px-4 text-xs">80</td>
+                  <td class="py-3 px-4 text-xs">78</td>
                 </tr>
                 <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
+                  <td class="py-3 px-4 text-xs font-medium">10</td>
                   <td class="py-3 px-4 text-xs font-medium">
                     <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/164.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Ishan Kishan</span>
                     </div>
                   </td>
                   <td class="py-3 px-4 text-xs">
                     10
                   </td>
                   <td class="py-3 px-4 text-xs">17</td>
-                  <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
-                  <td class="py-3 px-4 text-xs">157.80</td>
+                  <td class="py-3 px-4 text-xs">17</td>
+                  <td class="py-3 px-4 text-xs">67</td>
+                  <td class="py-3 px-4 text-xs">490</td>
+                  <td class="py-3 px-4 text-xs">30</td>
+                  <td class="py-3 px-4 text-xs">90.80</td>
                   <td class="py-3 px-4 text-xs">10</td>
-                  <td class="py-3 px-4 text-xs">3</td>
-                  <td class="py-3 px-4 text-xs">85</td>
-                  <td class="py-3 px-4 text-xs">33</td>
+                  <td class="py-3 px-4 text-xs">0</td>
+                  <td class="py-3 px-4 text-xs">90</td>
+                  <td class="py-3 px-4 text-xs">22</td>
                 </tr>
                 <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
+                  <td class="py-3 px-4 text-xs font-medium">11</td>
                   <td class="py-3 px-4 text-xs font-medium">
                     <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/202.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Henrich Klassen</span>
                     </div>
                   </td>
                   <td class="py-3 px-4 text-xs">
                     10
                   </td>
-                  <td class="py-3 px-4 text-xs">17</td>
-                  <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
-                  <td class="py-3 px-4 text-xs">157.80</td>
+                  <td class="py-3 px-4 text-xs">6</td>
+                  <td class="py-3 px-4 text-xs">6</td>
+                  <td class="py-3 px-4 text-xs">170</td>
+                  <td class="py-3 px-4 text-xs">510</td>
+                  <td class="py-3 px-4 text-xs">98.3</td>
+                  <td class="py-3 px-4 text-xs">220</td>
                   <td class="py-3 px-4 text-xs">10</td>
-                  <td class="py-3 px-4 text-xs">3</td>
-                  <td class="py-3 px-4 text-xs">85</td>
-                  <td class="py-3 px-4 text-xs">33</td>
+                  <td class="py-3 px-4 text-xs">4</td>
+                  <td class="py-3 px-4 text-xs">180</td>
+                  <td class="py-3 px-4 text-xs">90</td>
                 </tr>
                 <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
+                  <td class="py-3 px-4 text-xs font-medium">12</td>
                   <td class="py-3 px-4 text-xs font-medium">
                     <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
+                        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/148.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Nitish Rana</span>
                     </div>
                   </td>
                   <td class="py-3 px-4 text-xs">
                     10
                   </td>
-                  <td class="py-3 px-4 text-xs">17</td>
-                  <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
-                  <td class="py-3 px-4 text-xs">157.80</td>
+                  <td class="py-3 px-4 text-xs">19</td>
+                  <td class="py-3 px-4 text-xs">19</td>
+                  <td class="py-3 px-4 text-xs">49*</td>
+                  <td class="py-3 px-4 text-xs">450</td>
+                  <td class="py-3 px-4 text-xs">29</td>
+                  <td class="py-3 px-4 text-xs">110.2</td>
                   <td class="py-3 px-4 text-xs">10</td>
-                  <td class="py-3 px-4 text-xs">3</td>
-                  <td class="py-3 px-4 text-xs">85</td>
-                  <td class="py-3 px-4 text-xs">33</td>
-                </tr>
-                <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
-                  <td class="py-3 px-4 text-xs font-medium">1</td>
-                  <td class="py-3 px-4 text-xs font-medium">
-                    <div class="flex items-center">
-                        <img src="./src/assests/viratKohli.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
-                        <span>Virat Kohli</span>
-                    </div>
-                  </td>
-                  <td class="py-3 px-4 text-xs">
-                    10
-                  </td>
-                  <td class="py-3 px-4 text-xs">17</td>
-                  <td class="py-3 px-4 text-xs">14</td>
-                  <td class="py-3 px-4 text-xs">2</td>
-                  <td class="py-3 px-4 text-xs">890</td>
-                  <td class="py-3 px-4 text-xs">59.33</td>
-                  <td class="py-3 px-4 text-xs">157.80</td>
-                  <td class="py-3 px-4 text-xs">10</td>
-                  <td class="py-3 px-4 text-xs">3</td>
-                  <td class="py-3 px-4 text-xs">85</td>
-                  <td class="py-3 px-4 text-xs">33</td>
+                  <td class="py-3 px-4 text-xs">0</td>
+                  <td class="py-3 px-4 text-xs">18</td>
+                  <td class="py-3 px-4 text-xs">1</td>
                 </tr>
               </tbody>
             </table>

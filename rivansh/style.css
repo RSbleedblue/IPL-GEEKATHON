@@ -5,5 +5,51 @@ table tbody tr td:nth-child(6) {
     text-align: center;
   }
   .tableMain{
-    margin-top: 10vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+  .tableMain:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(22, 1, 41);
+  }
+  .searchIcon {
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left:-6px ;
+}
+.searchBar{
+  width: 140%;
+  margin-left: -40%;
+  font-size: 14px;
+}
+
+  body {
+    background-image: url('https://www.iplt20.com/assets/images/bottom-section-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.color{
+    filter: invert(90%) sepia(0%) saturate(13%) hue-rotate(87deg) brightness(119%) contrast(119%) drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    margin-left: 42px;
+    margin-top: 50px;
+  }
+  .wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .rotating-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 80px;
+  }
+  
+  
