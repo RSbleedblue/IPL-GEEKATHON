@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.venue-banner img {
+  width: 100%;
+  vertical-align: middle;
+}
+.card {
+  border: 2px solid #81a8d4;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust width as needed */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 306px;
+  overflow: auto;
+  justify-content: space-between;
+  background: linear-gradient(170deg, #fff 0, #eff4ff 50%, #fff 100%);
+  box-shadow: 0 4px 10px rgba(0 0 0 /12%);
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Card content styling */
+.card-content {
+  font-size: 15px;
+}
+.progress-bar {
+  height: 15px;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(to right, blueviolet, rgb(132, 88, 173));
+}
+.progress-orange {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(to right, rgb(190, 136, 111), rgb(236, 73, 8));
+}
+.card-content div {
+  color: rgb(35, 14, 112);
+  font-size: medium;
+}
+.all-cards {
+  background-image: url(https://www.iplt20.com/assets/images/bottom-section-bg.svg);
+  background-size: 110%;
+}
+.card:hover {
+  transform: scale(1.06); /* Scale the card up by 10% on hover */
+}
+.card-content {
+  color: rgb(35, 14, 112);
+  font-weight: 550;
+  font-size: medium;
+}
+.card .card-title .card-content .progress-bar {
+  color: #fff !important;
+}
