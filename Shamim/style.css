@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.allsection{ 
+    background-image: url(https://www.iplt20.com/assets/images/bottom-section-bg.svg);
+    background-repeat: repeat-y; 
+    overflow-x: hidden;
+}
+.header{
+    height: 15vh;
+    max-width: 100vw;
+    background-color: rgb(8, 16, 51);
+    padding: 30px;
+
+}
+.matchTitle{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.absolute{
+padding-left: 650px;
+background-color:white;
+}
+ 
+ .threePoint{
+    border-radius: 10px;
+    background-color:white;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    box-shadow: 0px 0px 1px  rgb(84, 83, 83), -0px 0px 1px  rgb(84, 83, 83);
+ }
+ .fixture button{
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    background-color:white;
+    color: rgb(116, 111, 108);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .fixture button:hover{
+    background-color: rgb(8, 16, 51);
+   color: white;
+ }
+
+ .salector{
+    padding-top:100px ;
+    display: flex;
+    justify-content: center;
+     gap: 40px;
+ }
+ .allTeam{
+    padding-left: 20px;
+ }
+ .allvenue{
+    padding-left: 50px;
+ }
+ .option {
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color:white;
+    color: rgb(10, 10, 10);
+    box-shadow: 0px 0px 1px  rgb(206, 204, 204), -0px 0px 1px   rgb(206, 204, 204);
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #11141C;
+ }
+
+ .option2 {
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #11141C;
+ }
+ .venue{
+   height: 100vh;
+   width: 70vw;
+   margin-left: 300px;
+   margin-top:30px ;
+ }
+
+.venue{
+    display: flex;
+    height: 32vh;
+    width: 70vw;
+   
+    margin: 0px;
+    /* background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px  rgb(84, 83, 83), -0px 0px 1px  rgb(84, 83, 83); */
+}
+.venue0{
+    /* height: 120vh; */
+    width: 70vw;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px  rgb(145, 143, 143), -0px 0px 1px  rgb(84, 83, 83);
+   margin: 50px 300px;
+}
+
+.first{
+    height: 250px;
+    width: 250px;
+    /* border: 1px solid black; */
+}
+.first p{
+    width: 150px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+/* .afterfirst{
+    height: 250px;
+    width: 5px;
+    padding-right: 20px;
+    display: flex;
+    text-align: start;
+    transform: rotate(90deg);
+} */
+.second2{
+    height: 190px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    /* border: 1px solid black; */
+}
+.third{
+    height: 250px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+    padding-left: 100px;
+    /* border: 1px solid black; */
+}
+.button button{
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: rgb(181, 69, 16);
+    border: none;
+    border-radius: 5px;
+    transform: skew(-20deg);
+    cursor: pointer;
+}
+.icon1 img{
+    height: 30px;
+    width: 30px;
+    border-radius: 505;
+  
+}
+
+.button button:hover{
+    background-color: white;
+    color: rgb(181, 69, 16) ;
+    border: 1px solid rgb(181, 69, 16) ;
+}
+.upperpart{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+
+}
+ .final{
+    height: 30px;
+    width: 70px;
+    border: 1px solid #367C3D;
+    background: #FFF;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    color: #282B32;
+    border-radius: 2px;
+    padding: 8px;
+ }
+
+ .final1{
+    height: 1px;
+    width: 110px;
+    border: 1px solid #367C3D;
+ }
+ .timeline-dot{
+     height: 15px;
+     width: 15px;
+    border-radius: 50%;
+     background-color: #367C3D;
+ }
+ .title{
+    margin-left: 12px;
+ }
+ .heading{
+    font-size: 10px;
+    line-height: 18px;
+    margin-left: 30px;
+    margin-top: 15px;
+    gap: 10px;
+ }
+ .Horizontalline hr{
+       color:rgb(84, 83, 83) ;
+ }
+.dottedLine hr{
+    border-top: 2px dotted green;
+    transform: rotate(90deg);
+}
