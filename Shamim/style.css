@@ -10,24 +10,31 @@
 .allsection{ 
     background-image: url(https://www.iplt20.com/assets/images/bottom-section-bg.svg);
     background-repeat: repeat-y; 
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
 }
 .header{
     height: 15vh;
-    max-width: 100%;
+    width: 100vw;
     background-color: rgb(8, 16, 51);
     padding: 30px;
-
+    display: flex;
+    gap: 70vh;
+   
 }
 .matchTitle{
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
 }
-.absolute{
+/* .absolute{
 padding-left: 650px;
 background-color:white;
-}
+} */
  
  .threePoint{
     border-radius: 10px;
@@ -37,9 +44,10 @@ background-color:white;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 70px;
+    /* position: fixed; */
+    margin-top: 45px;
     box-shadow: 0px 0px 1px  rgb(84, 83, 83), -0px 0px 1px  rgb(84, 83, 83);
+
  }
  .fixture button{
     height: 40px;
@@ -51,13 +59,16 @@ background-color:white;
     font-weight: 400;
     font-size: 14px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
  }
  .fixture button:hover{
     background-color: rgb(8, 16, 51);
    color: white;
+   cursor: pointer;
  }
 
  .salector{
+    /* height: 100px; */
     padding-top:100px ;
     display: flex;
     justify-content: center;
@@ -78,7 +89,7 @@ background-color:white;
     box-shadow: 0px 0px 1px  rgb(206, 204, 204), -0px 0px 1px   rgb(206, 204, 204);
     font-size: 15px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #11141C;
+    color: #11141C; 
  }
 
  .option2 {
@@ -86,152 +97,218 @@ background-color:white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #11141C;
  }
- .venue{
-   height: 100vh;
-   width: 70vw;
-   margin-left: 300px;
-   margin-top:30px ;
- }
+
 
 .venue{
     display: flex;
     height: 32vh;
     width: 70vw;
-    margin: 0px;
-    /* background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 1px  rgb(84, 83, 83), -0px 0px 1px  rgb(84, 83, 83); */
+    gap: 80px;
 }
 @media  only screen and (max-width:768px) {
+   
     .matchTitle{
         display: flex;
         justify-content: center;
         align-items: center;
+       margin: 10px;
     }
     .matchTitle h2{
       display: flex;
      margin-top: 10px;
     }
     .header{
-        width: 100vw;
+        width: 110vw;
     }
     .salector{
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 600px;
+
     }
-    .absolute{
-        /* height: 40px; */
-        width: 700px;
-        padding-left: 0px;
-        padding-top: -200px;
-    }
+   
     .threePoint{
-        border-radius: 10px;
-        background-color:white;
         width: 700px;
         height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        /* top: 10px; */
+         top: 50px; 
         box-shadow: 0px 0px 1px  rgb(84, 83, 83), -0px 0px 1px  rgb(84, 83, 83);
     }
-    .gender{
-        margin-left: 40px;
+    .gender select{
+        width: 200px;
     }
-    .allTeam{
-        margin-left: 20px;
+    .allTeam select{
+        
+        width: 200px;
     }
-    .allvenue{
-        margin-left: -10px;
+    .allvenue select{
+        
+        width: 200px;
     }
-    .season{
-        margin-left: 40px;
+    .season select{
+        
+        width: 200px;
     }
     
    
    .venue0{
-    width: 40vw;
-    
+    width: 60vw;
+    height: 390vh;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 1px  rgb(145, 143, 143), -0px 0px 1px  rgb(84, 83, 83);
-    /* margin-left: -1000px; */
-     /* position: relative; */
+     position: relative;
      display: flex;
      flex-direction: column;
-     justify-content: start;
-     align-items: start;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+   } 
+   .venue{
+    display: flex;
+    flex-shrink: 2;
    }
-    .first{
-        height: 100px;
-        width: 150px;
-    }
+   
+
     .second1{
-        margin-left: -40px;
         height: 150px;
         width: 500px;
+    }
+   
+    .heading h1{
+        font-size: 12px;
+        line-height: 10px;
+    
+    }
+    .title h4{
+        font-size: 7px;
+        line-height: 10px;
     }
     .third{
         height: 150px;
         width: 150px;
-        margin-left: -100px;
+        /* margin-left: -100px; */
     }
  .img1 img{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    margin-top: -2000px;
+    /* margin-top: -2000px; */
  }
  .img2 img{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    margin-top: -2000px;
+    /* margin-top: -2000px; */
  }
- .title h4{
+ 
+   .paragraph{
+    height: 10px;
+    width: 100px;
+    font-size: 7px;
+   }
+   .upperpart span{
+    width: 30px;
+    font-size: 7px;
+   }
+   .upperpart .final1{
+    width: 60px;
+   }
+   .upperpart .timeline-dot{
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+   }
+   .first .paragraph{
+    height: 180px;
+    width: 100px;
+    font-size: 10px;
+    line-height: 10px;
+    padding-bottom: 100px;
+    
+    /* margin-left: 30px; */
+   }
+   .venue .second2{
+    height: 100px;
+    width: 100px;
+   }
+   .third .button button{
+    height: 33px;
+    width: 64px;
+   }
+   /* .third .icon1{
+    height: 20px;
     width: 20px;
-    margin-top: -82px;
+   }
+   .third .icon2{
+    height: 20px;
+    width: 20px;
+   } */
+   .venue .third{
+    width: 70px;
+    padding-top: -20px;
+    gap: 20px;
+   }
+   .venue .third .button button{
+    font-size: 7px;
+    margin-top: -20px;
+   }
+   .venue .third .icon1{
+    height: 10px;
+    width: 10px;
+    margin-top: -20px;
+   }
+   .venue .third .icon2{
+    height: 10px;
+    width: 10px;
+    margin-top: -20px;
+   }
+
+   .afterfirst .dottedLine{
+    margin-top: 262px;
+    height: 60svh;
+   }
+   .Horizontalline hr{
+       color:rgb(84, 83, 83) ;
+       width: 600px;
  }
- .versus img {
-    margin-top: -800px;
- }
- .first p{
-    font-weight: 10px;
-    font-size: 5px;
- }
+   
+  
 
 }
 .venue0{
-    /* height: 120vh; */
-    width: 70vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 1px  rgb(145, 143, 143), -0px 0px 1px  rgb(84, 83, 83);
-   margin: 50px 300px; 
-   position: relative;
-   padding: -100px;
-   /* border: 1px solid black;
-}
- 
-.first{
-    height: 250px;
-    width: 250px;
-    /* border: 1px solid black; */
+   
+    position: relative;
+   
+  
 }
 .first p{
-    width: 150px;
-    /* height: 200px;  */
+    width: 200px;
+    height: 200px; 
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
     line-height: 22px;
     color: black;
-    text-align: center;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .afterfirst{
     height: 250px;
@@ -256,7 +333,7 @@ background-color:white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     /* border: 1px solid black; */
 }
 .third{
@@ -265,9 +342,7 @@ background-color:white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 60px;
-    padding-left: 100px;
-    /* border: 1px solid black; */
+    
 }
 .button button{
     height: 50px;
