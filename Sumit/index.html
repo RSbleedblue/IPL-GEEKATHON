@@ -3,26 +3,277 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Basic styling for demonstration purposes */
+      .header-main ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(19, 60, 136);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+      }
+
+      .header-main li {
+        /* float: left; */
+        margin-left: 20px;
+      }
+
+      .header-main li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .header-main li a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      .header-main .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fffcfc;
+        min-width: 160px;
+        z-index: 1;
+      }
+
+      .header-main .dropdown-content a {
+        color: rgb(0, 0, 0);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .header-main .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .header-main .search-icon {
+        /* float: right; */
+        padding: 10px;
+        /* margin-left: auto; */
+      }
+      .header-main .fa-solid.fa-chevron-down {
+        font-size: 15px;
+      }
+    </style>
   </head>
   <body>
+    <div class="header-main">
+      <div
+        class="flex justify-between text-white py-2"
+        style="
+          display: flex;
+          background-color: rgb(22, 35, 107);
+          color: white;
+          align-items: center;
+          justify-content: space-around;
+        "
+      >
+        <div class="container pe-0 text-white">
+          <div class="flex">
+            <span class="flex text-white">
+              <a
+                class="flex ml-24 font-sans"
+                style="color: white; font-family: sans-serif; font-size: 14px"
+                href="#"
+                target="_blank"
+                ><img
+                  style="align-items: center; justify-content: center"
+                  src="https://www.iplt20.com/assets/images/BCCI_logo.png"
+                  alt="BCCI Logo"
+                />BCCI.TV</a
+              >
+              <a
+                style="align-items: center"
+                href="https://www.wplt20.com/"
+                target="_blank"
+                ><img
+                  style="height: 22px; width: auto"
+                  src="https://www.iplt20.com/assets/images/womens-premier-league-logo.svg"
+                  alt="WPL Logo"
+              /></a>
+            </span>
+            <span
+              class="flex ml-96"
+              style="margin-left: 934px; justify-content: space-between"
+            >
+              <span
+                class="flex"
+                style="
+                  margin-right: 10px;
+                  font-size: 14px;
+                  align-items: center;
+                  padding-bottom: 2px;
+                "
+                >Follow Us</span
+              >
+              <a
+                onclick="click_social(this)"
+                data-title="thread"
+                href="https://www.threads.net/@iplt20"
+                target="_blank"
+                class="twit"
+              >
+                <img
+                  style="margin-right: 10px"
+                  src="https://www.iplt20.com/assets/images/thread-icon.svg"
+                  alt="threads"
+                />
+              </a>
+              <a
+                data-title="twitter"
+                href="https://twitter.com/IPL"
+                target="_blank"
+                class="twit"
+              >
+                <img
+                  style="margin-right: 10px"
+                  src="https://www.iplt20.com/assets/images/new-twitter-icon.svg"
+                  alt="twitter"
+                />
+              </a>
+              <a
+                data-title="instagram"
+                href="https://www.instagram.com/iplt20/"
+                target="_blank"
+                class="insta"
+              >
+                <img
+                  style="margin-right: 10px"
+                  src="https://www.iplt20.com/assets/images/new-instagram-icon.svg"
+                  alt="instagram"
+                />
+              </a>
+              <a
+                data-title="facebook"
+                href="https://www.facebook.com/IPL/"
+                target="_blank"
+                class="fb"
+              >
+                <img
+                  style="margin-right: 134px"
+                  src="https://www.iplt20.com/assets/images/new-facebook-icon.svg"
+                  alt="facebook"
+                />
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class=" mx-auto"> -->
+      <!-- second nav bar -->
+      <div class="sticky top-0 z-10" style="position: sticky">
+        <ul
+          class="navbar_2"
+          style="
+            display: flex;
+            align-items: center;
+            background-image: url(https://www.iplt20.com/assets/images/header-curl-bg.svg);
+          "
+        >
+          <!-- background image 2nd nav bar -->
+          <a href="#" style="height: 44px">
+            <img
+              style="height: 44px"
+              class="lazy"
+              src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png"
+              alt=""
+            />
+          </a>
+          <li style="margin-left: 200px">
+            <a href="#matches">MATCHES </a>
+          </li>
+          <li class="dropdown">
+            <a href="#videos" class="dropbtn"
+              >VIDEOS <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#latest">LATEST</a>
+              <a href="#highlights">HIGHLIGHTS</a>
+              <a href="#auction-videos">AUCTION</a>
+              <a href="#magic-moments">MAGIC MOMENTS</a>
+              <a href="#interviews">INTERVIEWS</a>
+              <a href="#press-conference">PRESS CONFERENCE</a>
+              <a href="#all-videos">ALL</a>
+            </div>
+          </li>
+          <li><a href="#stats">STATS</a></li>
+          <li><a href="#points-table">POINTS TABLE</a></li>
+          <li><a href="#teams">TEAMS</a></li>
+          <li class="dropdown">
+            <a href="#news" class="dropbtn"
+              >NEWS<i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#all-news">ALL NEWS</a>
+              <a href="#announcements">ANNOUNCEMENTS</a>
+              <a href="#match-reports">MATCH REPORTS</a>
+              <a href="#interviews-news">INTERVIEWS</a>
+            </div>
+          </li>
+          <li><a href="#auction">AUCTION</a></li>
+          <li class="dropdown">
+            <a href="#more" class="dropbtn"
+              >MORE<i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#about">ABOUT</a>
+              <a href="#mobile-products">MOBILE PRODUCTS</a>
+              <a href="#photos">PHOTOS</a>
+              <a href="#venues">VENUES</a>
+              <a href="#fantasy">FANTASY</a>
+            </div>
+          </li>
+          <li class="ml-16">
+            <!-- fanPoll logo -->
+            <img
+              class="w-16 cursor-pointer"
+              src="https://www.iplt20.com/assets/images/fan-poll.svg"
+              alt=""
+            />
+          </li>
+          <!-- search icon -->
+          <li style="margin-left: 0px" class="search-icon">
+            <a href="#search">
+              <img
+                src="https://www.iplt20.com/assets/images/new-search-icon.svg"
+                alt="Search Icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- banner section sumit -->
     <div class="venue-banner overflow-hidden">
       <img src="./images/venue-banner.png" alt="" draggable="false" />
     </div>
-    <section class="all-cards">
+    <section class="all-cards pb-8">
       <div
         class="nav-bar flex justify-center py-6 overflow-hidden z-10 left-0 right-0"
       >
-        <button
-          class="bg-orange-600 text-cyan-50 italic font-semibold px-4 py-3 cursor-pointer"
-        >
-          Auction Fan Poll History
-        </button>
+        <div class="button-wrap">
+          <button class="signup-button">Auction Fan Poll History</button>
+        </div>
       </div>
       <!-- row 1 -->
-      <div class="allcards flex justify-center">
+      <div class="allcards flex justify-center md:flex-wrap">
         <div class="card">
           <div class="card-title">
             Which Pacer is going to be most in demand during the IPL Player
@@ -116,7 +367,7 @@
         </div>
       </div>
       <!-- row 2 -->
-      <div class="allcards-c2 flex justify-center">
+      <div class="allcards-c2 flex justify-center md:flex-wrap">
         <div class="card">
           <div class="card-title">
             The Indian Batter who is most likely to going to find a team for IPL
@@ -214,7 +465,7 @@
         </div>
       </div>
       <!-- row 3 -->
-      <div class="allcards-c3 flex justify-center">
+      <div class="allcards-c3 flex justify-center md:flex-wrap">
         <div class="card">
           <div class="card-title">
             Predict the player that will be the Most Expensive Overseas Bowler
@@ -317,7 +568,7 @@
         </div>
       </div>
       <!-- row4 -->
-      <div class="allcards-c4 flex justify-center">
+      <div class="allcards-c4 flex justify-center md:flex-wrap">
         <div class="card">
           <div class="card-title">
             Which Overseas Batter are you excited to see in the IPL Player
@@ -414,7 +665,7 @@
         </div>
       </div>
       <!-- row5 -->
-      <div class="allcards-c5 flex justify-center overflow-hidden">
+      <div class="allcards-c5 flex justify-center overflow-hidden md:flex-wrap">
         <div class="card">
           <div class="card-title">
             Which slot should Lucknow Super Giants look to fill?
@@ -489,6 +740,124 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- footer -->
+    <section>
+      <div
+        class="footerSection flex justify-center pt-6 pb-6 font-sans md:flex-wrap"
+        style="
+          background-image: url(https://www.iplt20.com/assets/images/foooter-bg.png);
+          background-position: center;
+          background-size: 100%;
+          background-color: #11141c;
+        "
+      >
+        <footer
+          class="grid grid-col-4 gap-36 grid-flow-col mx-auto md:flex-wrap"
+        >
+          <div class="text-white">
+            <h2 class="font-bold text-xl">TEAM</h2>
+            <ul class="text-sm text-slate-400 mt-4">
+              <li class="hover:underline mb-4">
+                <a href="">Chennai super kings</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href=""> Delhi Capitals</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">Gujarat Titans</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">Kolkata Knight Riders</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href=""> Lucknow Super Giants</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">Mumbai Indians</a>
+              </li>
+              <li class="hover:underline mb-4"><a href="">Punjab Kings</a></li>
+              <li class="hover:underline mb-4">
+                <a href="">Rajasthan Royals</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">Royal Challengers Bangalore</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">Sunrisers Hyderabad</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-white">
+            <h2 class="font-bold text-xl">ABOUT</h2>
+            <ul class="text-sm text-slate-400 mt-4">
+              <li class="hover:underline mb-4"><a href=""> About Us</a></li>
+              <li class="hover:underline mb-4">
+                <a href=""> Anti Corruption Policy</a>
+              </li>
+              <li class="mb-4 hover:underline">
+                <a href="">Anti Doping Policy</a>
+              </li>
+              <li class="mb-4 hover:underline">
+                <a href=""> TUE Application Form</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">Anti Discrimination Policy</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">Clothing and Equipment Regulations</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">Code Of Conduct For Players and Teams Officials</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">News Access Regulations</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href=""> Image Use Terms</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-white">
+            <h2 class="font-bold text-xl">GUIDELINES</h2>
+            <ul class="text-sm text-slate-400 mt-4">
+              <li class="hover:underline mb-4">
+                <a href=""> IPL Code Of Conduct For Match Officials</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href=""> Brand And Protection Guidelines</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">Governing Council</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">Match Playing Conditions</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href="">PMOA Minimum Standard</a>
+              </li>
+              <li class="hover:underline mb-4">
+                <a href=""> Suspect Action Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-white">
+            <h2 class="font-bold text-xl">CONTACT</h2>
+            <ul class="text-sm text-slate-400 mt-4">
+              <li class="hover:underline mb-4"><a href="">Contact Us</a></li>
+              <li class="hover:underline mb-4"><a href=""> Sponsorship</a></li>
+              <li class="hover:underline mb-4">
+                <a href=""> Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      <p
+        class="flex justify-center bg-black text-white pt-4 pb-4 text-sm font-sans"
+      >
+        Copyright © IPL 2024 All Rights Reserved.
+      </p>
     </section>
   </body>
 </html>
