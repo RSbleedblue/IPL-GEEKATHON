@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Points table</title>
+ 
+</head>
+<body>
+    <div class="flex justify-between bg-indigo-950 text-white py-2" style="background-color: rgb(9, 9, 79); color: white; align-items: center;">
+        <div class="container mx-auto text-white">
+            
+            <div class="flex justify-between">
+                <span class="flex text-white">
+                    <a class="flex font-sans" style="color: white; font-family: sans-serif; font-size: 14px;" href="#" target="_blank"><img style="align-items: center; justify-content: center;" src="https://www.iplt20.com/assets/images/BCCI_logo.png" alt="BCCI Logo">BCCI.TV</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a style="align-items: center;" href="https://www.wplt20.com/" target="_blank"><img style="height:22px;width:auto;" src="https://www.iplt20.com/assets/images/womens-premier-league-logo.svg" alt="WPL Logo"></a>
+                </span>
+                <span class="flex ml-auto" style="font-size: 14px; align-items: center; padding-bottom: 2px;">
+                    Follow Us
+                    <a onclick="click_social(this)" data-title="thread" href="#" target="_blank" class="twit">
+                        <img style="margin-right: 10px;" src="https://www.iplt20.com/assets/images/thread-icon.svg" alt="threads">
+                    </a>
+                    <a  data-title="twitter" href="#" target="_blank" class="twit">
+                        <img style="margin-right: 10px;" src="https://www.iplt20.com/assets/images/new-twitter-icon.svg" alt="twitter">
+                    </a>
+                    <a  data-title="instagram" href="#" target="_blank" class="insta">
+                        <img style="margin-right: 10px;" src="https://www.iplt20.com/assets/images/new-instagram-icon.svg" alt="instagram">
+                    </a>
+                    <a  data-title="facebook" href="#" target="_blank" class="fb">
+                        <img src="https://www.iplt20.com/assets/images/new-facebook-icon.svg" alt="facebook">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <ul
+          style="
+            display: flex;
+            align-items: center;
+            background-image: url(https://www.iplt20.com/assets/images/header-curl-bg.svg);
+          "
+        >
+          <!-- background image 2nd nav bar -->
+          <a href="#" style="height: 44px">
+            <img
+              style="height: 44px"
+              class="lazy"
+              src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png"
+              alt=""
+            />
+          </a>
+          <li style="margin-left: 200px">
+            <a href="#matches">MATCHES </a>
+          </li>
+          <li class="dropdown">
+            <a href="#videos" class="dropbtn"
+              >VIDEOS <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#latest">LATEST</a>
+              <a href="#highlights">HIGHLIGHTS</a>
+              <a href="#auction-videos">AUCTION</a>
+              <a href="#magic-moments">MAGIC MOMENTS</a>
+              <a href="#interviews">INTERVIEWS</a>
+              <a href="#press-conference">PRESS CONFERENCE</a>
+              <a href="#all-videos">ALL</a>
+            </div>
+          </li>
+          <li><a href="#stats">STATS</a></li>
+          <li><a href="#points-table">POINTS TABLE</a></li>
+          <li><a href="#teams">TEAMS</a></li>
+          <li class="dropdown">
+            <a href="#news" class="dropbtn"
+              >NEWS<i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#all-news">ALL NEWS</a>
+              <a href="#announcements">ANNOUNCEMENTS</a>
+              <a href="#match-reports">MATCH REPORTS</a>
+              <a href="#interviews-news">INTERVIEWS</a>
+            </div>
+          </li>
+          <li><a href="#auction">AUCTION</a></li>
+          <li class="dropdown">
+            <a href="#more" class="dropbtn"
+              >MORE<i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#about">ABOUT</a>
+              <a href="#mobile-products">MOBILE PRODUCTS</a>
+              <a href="#photos">PHOTOS</a>
+              <a href="#venues">VENUES</a>
+              <a href="#fantasy">FANTASY</a>
+            </div>
+          </li>
+          <li class="ml-16">
+            <!-- fanPoll logo -->
+            <img
+              class="w-16 cursor-pointer"
+              src="https://www.iplt20.com/assets/images/fan-poll.svg"
+              alt=""
+            />
+          </li>
+          <!-- search icon -->
+          <li style="margin-left: 0px" class="search-icon">
+            <a href="#search">
+              <img
+                src="https://www.iplt20.com/assets/images/new-search-icon.svg"
+                alt="Search Icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+     <!--Points table-->
+     <div class="flex justify-between bg-indigo-950 text-white py-1 points" style="background-color: #081033; color: white; align-items: center;">
+        <h1 class="text-3xl">POINTS TABLE</h1>
+    </div>
+    <div class="container mx-auto flex">   
+        <div class="container mx-auto mt-8 w-[40%]">
+          <div class="grid grid-cols-2 gap-1 items-center">
+              <div class="col-span-1">
+                  <select class="p-2 w-[90%] border rounded tableMain">
+                      <option>Men</option>
+                      <option>Women</option>
+                  </select>
+              </div>
+              <div class="col-span-1">
+                <select class="p-2 w-[90%] border rounded tableMain">
+                    <option>Season</option>
+                    <option>Season 2023</option>
+                    <option>Season 2022</option>
+                    <option>Season 2021</option>
+                    <option>Season 2020</option>
+                </select>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!--Table Starts-->
+    <div class="p-4 bg-white shadow-md rounded-lg m-10">
+        <div class="flex items-center justify-between mb-4 relative z-10 ">
+        </div>          
+        <table class="w-full text-left text-sm table-auto">
+          <thead class="relative overflow-x-auto shadow-md sm:rounded-lg bg-indigo-950 ">
+            <tr>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">POS</th>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">TEAM</th>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">P</th>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">W</th>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">L</th>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">NR</th>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">NRR</th>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">FOR</th>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">AGAINST</th>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">PTS</th>
+              <th class="py-3 px-4 text-xs text-white font-medium text-gray-500 uppercase tracking-wider">RECENT FORM</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                <td class="py-3 px-4 text-xs font-medium">1</td>
+                <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://scores.iplt20.com/ipl/teamlogos/GT.png" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Gujrat Titans</span>
+                        <img src=" https://scores.iplt20.com/ipl/mc/images/qualified.png" alt="Player Photo" class="w-4 h-4 rounded-full ml-2">
+                    </div>
+                </td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">10</td>
+                <td class="py-3 px-4 text-xs">4</td>
+                <td class="py-3 px-4 text-xs">0</td>
+                <td class="py-3 px-4 text-xs">0.809</td>
+                <td class="py-3 px-4 text-xs">2450/268.1</td>
+                <td class="py-3 px-4 text-xs">2326/279.2</td>
+                <td class="py-3 px-4 text-xs">20</td>
+                <td class="py-3 px-4 text-xs">
+                    <div class = "flex align-center">
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                <td class="py-3 px-4 text-xs font-medium">2</td>
+                <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://scores.iplt20.com/ipl/teamlogos/CSK.png?v=2" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Chennai Super King</span>
+                        <img src=" https://scores.iplt20.com/ipl/mc/images/qualified.png" alt="Player Photo" class="w-4 h-4 rounded-full ml-2">
+                    </div>
+                </td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">8</td>
+                <td class="py-3 px-4 text-xs">5</td>
+                <td class="py-3 px-4 text-xs">1</td>
+                <td class="py-3 px-4 text-xs">0.652</td>
+                <td class="py-3 px-4 text-xs">2398/254.3</td>
+                <td class="py-3 px-4 text-xs">2232/257.5</td>
+                <td class="py-3 px-4 text-xs">17</td>
+                <td class="py-3 px-4 text-xs">
+                    <div class = "flex align-center">
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                        <span class="rf W">W</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                <td class="py-3 px-4 text-xs font-medium">3</td>
+                <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://scores.iplt20.com/ipl/teamlogos/LSG.png?v=2" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Lucknow Super Giants</span>
+                        <img src=" https://scores.iplt20.com/ipl/mc/images/qualified.png" alt="Player Photo" class="w-4 h-4 rounded-full ml-2 ">
+                    </div>
+                </td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">8</td>
+                <td class="py-3 px-4 text-xs">5</td>
+                <td class="py-3 px-4 text-xs">1</td>
+                <td class="py-3 px-4 text-xs">0.239</td>
+                <td class="py-3 px-4 text-xs">2234/255.1</td>
+                <td class="py-3 px-4 text-xs">2213/256.2</td>
+                <td class="py-3 px-4 text-xs">17</td>
+                <td class="py-3 px-4 text-xs">
+                    <div class = "flex align-center">
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                <td class="py-3 px-4 text-xs font-medium">4</td>
+                <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://scores.iplt20.com/ipl/teamlogos/MI.png?v=2" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Mumbai Indians</span>
+                        <img src=" https://scores.iplt20.com/ipl/mc/images/qualified.png" alt="Player Photo" class="w-4 h-4 rounded-full ml-2">
+                    </div>
+                </td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">8</td>
+                <td class="py-3 px-4 text-xs">6</td>
+                <td class="py-3 px-4 text-xs">0</td>
+                <td class="py-3 px-4 text-xs">-0.044</td>
+                <td class="py-3 px-4 text-xs">2592/270.3</td>
+                <td class="py-3 px-4 text-xs">2620/272.1</td>
+                <td class="py-3 px-4 text-xs">16</td>
+                <td class="py-3 px-4 text-xs">
+                    <div class = "flex align-center">
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                        <span class="rf W">W</span>
+                        <span class="rf W">W</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                <td class="py-3 px-4 text-xs font-medium">5</td>
+                <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://scores.iplt20.com/ipl/teamlogos/RR.png?v=2" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Rajasthan Royal</span>
+                    </div>
+                </td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">7</td>
+                <td class="py-3 px-4 text-xs">7</td>
+                <td class="py-3 px-4 text-xs">0</td>
+                <td class="py-3 px-4 text-xs">0.148</td>
+                <td class="py-3 px-4 text-xs">2223/218.1</td>
+                <td class="py-3 px-4 text-xs">2346/422.2</td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">
+                    <div class = "flex align-center">
+                        <span class="rf L">L</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                <td class="py-3 px-4 text-xs font-medium">6</td>
+                <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://scores.iplt20.com/ipl/teamlogos/RCB.png?v=2" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Royal Challengers Bangalore</span>
+                    </div>
+                </td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">7</td>
+                <td class="py-3 px-4 text-xs">7</td>
+                <td class="py-3 px-4 text-xs">0</td>
+                <td class="py-3 px-4 text-xs">0.135</td>
+                <td class="py-3 px-4 text-xs">2502/275.4</td>
+                <td class="py-3 px-4 text-xs">2435/272.2</td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">
+                    <div class = "flex align-center">
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                <td class="py-3 px-4 text-xs font-medium">7</td>
+                <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://scores.iplt20.com/ipl/teamlogos/KKR.png?v=2" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Kolkata Night Riders</span>
+                    </div>
+                </td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">6</td>
+                <td class="py-3 px-4 text-xs">8</td>
+                <td class="py-3 px-4 text-xs">0</td>
+                <td class="py-3 px-4 text-xs">-2.309</td>
+                <td class="py-3 px-4 text-xs">2123/348.1</td>
+                <td class="py-3 px-4 text-xs">2234/221.2</td>
+                <td class="py-3 px-4 text-xs">12</td>
+                <td class="py-3 px-4 text-xs">
+                    <div class = "flex align-center">
+                        <span class="rf L">L</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                <td class="py-3 px-4 text-xs font-medium">8</td>
+                <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://scores.iplt20.com/ipl/teamlogos/PBKS.png?v=2" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Punjab Kings</span>
+                    </div>
+                </td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">6</td>
+                <td class="py-3 px-4 text-xs">8</td>
+                <td class="py-3 px-4 text-xs">0</td>
+                <td class="py-3 px-4 text-xs">-3.009</td>
+                <td class="py-3 px-4 text-xs">2412/228.1</td>
+                <td class="py-3 px-4 text-xs">2222/212.2</td>
+                <td class="py-3 px-4 text-xs">12</td>
+                <td class="py-3 px-4 text-xs">
+                    <div class = "flex align-center">
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf L">L</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                <td class="py-3 px-4 text-xs font-medium">9</td>
+                <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://scores.iplt20.com/ipl/teamlogos/DC.png?v=2" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Delhi Capitals</span>
+                    </div>
+                </td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">5</td>
+                <td class="py-3 px-4 text-xs">9</td>
+                <td class="py-3 px-4 text-xs">0</td>
+                <td class="py-3 px-4 text-xs">-0.808</td>
+                <td class="py-3 px-4 text-xs">2213/238.1</td>
+                <td class="py-3 px-4 text-xs">2233/129.2</td>
+                <td class="py-3 px-4 text-xs">10</td>
+                <td class="py-3 px-4 text-xs">
+                    <div class = "flex align-center">
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf L">L</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100 cursor-pointer">
+                <td class="py-3 px-4 text-xs font-medium">10</td>
+                <td class="py-3 px-4 text-xs font-medium">
+                    <div class="flex items-center">
+                        <img src="https://scores.iplt20.com/ipl/teamlogos/SRH.png?v=2" alt="Player Photo" class="w-12 h-12 rounded-full mr-2">
+                        <span>Sunrisers Hyderabad</span>
+                    </div>
+                </td>
+                <td class="py-3 px-4 text-xs">14</td>
+                <td class="py-3 px-4 text-xs">4</td>
+                <td class="py-3 px-4 text-xs">10</td>
+                <td class="py-3 px-4 text-xs">8</td>
+                <td class="py-3 px-4 text-xs">-0.590</td>
+                <td class="py-3 px-4 text-xs">2120/268.1</td>
+                <td class="py-3 px-4 text-xs">2223/379.2</td>
+                <td class="py-3 px-4 text-xs">10</td>
+                <td class="py-3 px-4 text-xs">
+                    <div class = "flex align-center">
+                        <span class="rf W">W</span>
+                        <span class="rf W">W</span>
+                        <span class="rf W">W</span>
+                        <span class="rf L">L</span>
+                        <span class="rf W">W</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        
+    </div>      
+</body>
+
+</html>

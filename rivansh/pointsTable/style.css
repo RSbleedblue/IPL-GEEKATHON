@@ -1,0 +1,115 @@
+body {
+    background-image: url('https://www.iplt20.com/assets/images/bottom-section-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 60, 136);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+  }
+
+  li {
+    /* float: left; */
+    margin-left: 20px;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fffcfc;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .search-icon {
+    /* float: right; */
+    padding: 10px;
+    /* margin-left: auto; */
+  }
+  .fa-solid.fa-chevron-down {
+    font-size: 15px;
+  }
+  .points{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .points h1{
+    margin: 10px;
+    margin-left: 6vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5; 
+  }
+  .tableMain{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .tableMain:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(22, 1, 41);
+  }
+  .rf.W {
+    border: 1px solid #2A841B;
+    color: #2A841B;
+    background: none;
+}
+.rf.L {
+    border: 1px solid #D34646;
+    color: #D34646;
+    background: none;
+}
+.rf {
+width: 24px;
+height: 24px;
+font-size: 12px;
+line-height: 24px;
+color: #8d8787;
+border: 1px solid #8d8787;
+margin: 0 3px;
+border-radius: 50%;
+font-family: 'Rubik', sans-serif;
+font-style: normal;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}

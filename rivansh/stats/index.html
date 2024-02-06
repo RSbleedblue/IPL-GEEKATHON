@@ -2,26 +2,118 @@
 <html>
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Stats</title>
 </head>
 <body>
-	<nav class="bg-gray-800 text-white p-4">
-    <div class="container mx-auto flex justify-between sticky items-center p-0">
-        <a href="www.iplt20.com" class="text-lg font-bold">
-            <img src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png">
-        </a>
-        <div class="flex items-center space-x-4">
-            <a href="#" class="hover:text-gray-300">Match</a>
-            <a href="#" class="hover:text-gray-300">Video</a>
-            <a href="#" class="hover:text-gray-300">Stats</a>
-            <a href="#" class="hover:text-gray-300">Points table</a>
-            <a href="#" class="hover:text-gray-300">Team</a>
-            <a href="#" class="hover:text-gray-300">News</a>
-            <a href="#" class="hover:text-gray-300">Auction</a>
-            <a href="#" class="hover:text-gray-300">More</a>
+  <div class="flex justify-between bg-indigo-950 text-white py-2" style="background-color: rgb(9, 9, 79); color: white; align-items: center;">
+    <div class="container mx-auto text-white">
+        <div class="flex justify-between">
+            <span class="flex text-white">
+                <a class="flex font-sans" style="color: white; font-family: sans-serif; font-size: 14px;" href="#" target="_blank"><img style="align-items: center; justify-content: center;" src="https://www.iplt20.com/assets/images/BCCI_logo.png" alt="BCCI Logo">BCCI.TV</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="align-items: center;" href="https://www.wplt20.com/" target="_blank"><img style="height:22px;width:auto;" src="https://www.iplt20.com/assets/images/womens-premier-league-logo.svg" alt="WPL Logo"></a>
+            </span>
+            <span class="flex ml-auto" style="font-size: 14px; align-items: center; padding-bottom: 2px;">
+                Follow Us
+                <a onclick="click_social(this)" data-title="thread" href="#" target="_blank" class="twit">
+                    <img style="margin-right: 10px;" src="https://www.iplt20.com/assets/images/thread-icon.svg" alt="threads">
+                </a>
+                <a  data-title="twitter" href="#" target="_blank" class="twit">
+                    <img style="margin-right: 10px;" src="https://www.iplt20.com/assets/images/new-twitter-icon.svg" alt="twitter">
+                </a>
+                <a  data-title="instagram" href="#" target="_blank" class="insta">
+                    <img style="margin-right: 10px;" src="https://www.iplt20.com/assets/images/new-instagram-icon.svg" alt="instagram">
+                </a>
+                <a  data-title="facebook" href="#" target="_blank" class="fb">
+                    <img src="https://www.iplt20.com/assets/images/new-facebook-icon.svg" alt="facebook">
+                </a>
+            </span>
         </div>
     </div>
-  </nav>
+</div>
+
+<div class="">
+  <ul
+    style="
+      display: flex;
+      align-items: center;
+      background-image: url(https://www.iplt20.com/assets/images/header-curl-bg.svg);
+    "
+  >
+    <!-- background image 2nd nav bar -->
+    <a href="#" style="height: 44px">
+      <img
+        style="height: 44px"
+        class="lazy"
+        src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png"
+        alt=""
+      />
+    </a>
+    <li style="margin-left: 200px">
+      <a href="#matches">MATCHES </a>
+    </li>
+    <li class="dropdown">
+      <a href="#videos" class="dropbtn"
+        >VIDEOS <i class="fa-solid fa-chevron-down"></i
+      ></a>
+      <div class="dropdown-content">
+        <a href="#latest">LATEST</a>
+        <a href="#highlights">HIGHLIGHTS</a>
+        <a href="#auction-videos">AUCTION</a>
+        <a href="#magic-moments">MAGIC MOMENTS</a>
+        <a href="#interviews">INTERVIEWS</a>
+        <a href="#press-conference">PRESS CONFERENCE</a>
+        <a href="#all-videos">ALL</a>
+      </div>
+    </li>
+    <li><a href="#stats">STATS</a></li>
+    <li><a href="#points-table">POINTS TABLE</a></li>
+    <li><a href="#teams">TEAMS</a></li>
+    <li class="dropdown">
+      <a href="#news" class="dropbtn"
+        >NEWS<i class="fa-solid fa-chevron-down"></i
+      ></a>
+      <div class="dropdown-content">
+        <a href="#all-news">ALL NEWS</a>
+        <a href="#announcements">ANNOUNCEMENTS</a>
+        <a href="#match-reports">MATCH REPORTS</a>
+        <a href="#interviews-news">INTERVIEWS</a>
+      </div>
+    </li>
+    <li><a href="#auction">AUCTION</a></li>
+    <li class="dropdown">
+      <a href="#more" class="dropbtn"
+        >MORE<i class="fa-solid fa-chevron-down"></i
+      ></a>
+      <div class="dropdown-content">
+        <a href="#about">ABOUT</a>
+        <a href="#mobile-products">MOBILE PRODUCTS</a>
+        <a href="#photos">PHOTOS</a>
+        <a href="#venues">VENUES</a>
+        <a href="#fantasy">FANTASY</a>
+      </div>
+    </li>
+    <li class="ml-16">
+      <!-- fanPoll logo -->
+      <img
+        class="w-16 cursor-pointer"
+        src="https://www.iplt20.com/assets/images/fan-poll.svg"
+        alt=""
+      />
+    </li>
+    <!-- search icon -->
+    <li style="margin-left: 0px" class="search-icon">
+      <a href="#search">
+        <img
+          src="https://www.iplt20.com/assets/images/new-search-icon.svg"
+          alt="Search Icon"
+      /></a>
+    </li>
+  </ul>
+</div>
+
+
   <div class="mx-auto flex items-center space-x-8 relative bg-cover " style="background-image: url('./src/assests/background.jpg'); background-color: rgb(0, 0, 0);">      
     <div class="absolute inset-0 bg-black opacity-80">
     
@@ -404,8 +496,9 @@
               </tbody>
             </table>
           </div>
-         
         </div>
+        <!--Footer-->
+        
          
 </body>
 </html>
