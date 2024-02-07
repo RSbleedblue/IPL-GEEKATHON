@@ -120,7 +120,7 @@ background-color:white;
     display: flex;
     height: 32vh;
     width: 70vw;
-    gap: 35px;
+    gap: 30px;
 
 }
 @media  only screen and (max-width:768px) {
@@ -306,12 +306,12 @@ background-color:white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 80vw;
+    width: 75vw;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 1px  rgb(145, 143, 143), -0px 0px 1px  rgb(84, 83, 83);
     position: relative;
-     overflow-x: hidden;
+     overflow: hidden;
 
 }
 .first p{
