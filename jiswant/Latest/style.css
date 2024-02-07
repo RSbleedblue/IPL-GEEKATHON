@@ -34,6 +34,67 @@ padding-bottom: 5px;
     height: 500px;
 }
 
+  /* <!-- highlight details --> */
+  .highlightDetailsL{
+    position: absolute;
+    width: 40%;
+    left: 76px;
+    top: calc(100% - 490px);
+    display: block;
+}
+
+.divVideoL{
+    margin-top: 10px;
+    width: 100%;
+    transform: skew(336deg);
+}
+.VideoButtonL{
+    background-color: #dc5034;
+    color: white;
+    font-family: bebas_neueregular;
+    font-size: 15px;
+    padding: 4px 10px;
+    
+}
+ .divVideoH2L{
+    color: white;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-top: 20px;
+    font-family: bebas_neueregular;
+ }
+
+ .divVideoH3L{
+    color: rgb(255, 255, 255, 85%);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+ }
+ .playShareL{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .divVideo1L{
+    margin-top: 30px;
+    transform: skew(336deg);
+ }
+
+ .playSpanL{
+    background-color: #dc5034;
+    font-size: 20px;
+    padding: 5px 22px;
+    color: white;
+    font-weight: 500;
+    transform: skew(336deg);
+ }
+ .highlightShareL{
+    margin-top: 17px;
+    margin-left: 45px;
+    border: 1px solid white;
+    border-radius: 5px;
+ }
+ /* <!-- highlight details --> */
+
 /* mainBody */
 .mainBody{
     width: 100%;
