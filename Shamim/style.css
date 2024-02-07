@@ -325,6 +325,7 @@ background-color:white;
     line-height: 22px;
     color: black;
     display: flex;
+    margin-top: -30px;
     justify-content: center;
     align-items: center;
     
@@ -352,7 +353,7 @@ background-color:white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: -20px;
+    margin-top: -30px;
     /* margin-left: 20px; */
     /* border: 1px solid black; */
 }
@@ -374,7 +375,7 @@ background-color:white;
     border-radius: 5px;
     transform: skew(-20deg);
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: -10px;
     margin-left: 50px;
 }
 .icon1 img{
