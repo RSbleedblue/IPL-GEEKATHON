@@ -2,50 +2,38 @@
 
 ## Overview
 
-Welcome to the IPLT20 Project! This project aims to provide statistical analysis and points table for the Indian Premier League (IPL) T20 cricket tournament. By implementing auto-responsiveness with Tailwind CSS, we ensure a seamless user experience across different devices.
+Welcome to the IPLT20 Project! This project showcases statistical analysis and points table for the Indian Premier League (IPL) T20 cricket tournament. The stats and points table sections have been meticulously designed and implemented using HTML, CSS, and Tailwind CSS.
 
 ## Features
 
 ### Stats and Points Table
 
-In this section, we aim to display statistical analysis and points table for the IPLT20 cricket tournament. Key features include:
+This project provides two main sections:
 
-- **Tailwind CSS for Auto-Responsiveness:** Utilize Tailwind CSS to ensure that the stats and points table section is visually appealing and functional on various devices.
+- **Stats:** View detailed statistical analysis of IPLT20 matches.
+- **Points Table:** Access the current points table of IPLT20 teams.
 
-- **Accurate Data Representation:** Present accurate statistical data and points table for the IPLT20 tournament.
+## Live Demo
 
-- **Consistent Styling:** Maintain a consistent look and feel with the rest of the IPLT20 project.
+- [Stats Section](https://rsbleedblue.github.io/IPL-GEEKATHON/rivansh/stats/index.html)
+- [Points Table Section](https://rsbleedblue.github.io/IPL-GEEKATHON/rivansh/pointsTable/index.html)
 
 ## Tech Stack
 
-- HTML
-- Tailwind CSS
+- **HTML:** Used for structuring the web pages.
+- **CSS:** Used for styling the web pages.
+- **Tailwind CSS:** Used for rapid UI development and creating responsive designs.
 
-### IPLT20 Project
+## Acknowledgements
 
-#### Stats and Points Table
-(https://rsbleedblue.github.io/IPL-GEEKATHON/)
+I would like to express my gratitude to **[Geekster](https://www.geekster.in/)** for providing me with the opportunity to showcase my skills through this IPLT20 project.
 
-## Acknowledgement
+## Feedback
 
-I would like to express my gratitude to everyone who contributed to the development of the stats and points table section of this IPLT20 project.
+Your feedback is valuable! If you have any suggestions or improvements for this project, feel free to [open an issue](https://github.com/rsbleedblue/IPL-GEEKATHON/issues/new) or submit a pull request.
 
+## Contact
 
-### Special Thanks
+For any inquiries or collaborations, you can reach out to me via email at [your_email@example.com](mailto:your_email@example.com).
 
-I extend my gratitude to the mentors and contributors who supported and guided me throughout the development process.
-
-## Learning Resources
-
-A heartfelt thank you to [Tailwind CSS](https://tailwindcss.com/) for providing the framework that enabled auto-responsiveness in this project.
-
-### Feedback and Support
-
-I appreciate the feedback and support received from my peers, mentors, and the open-source community. Your insights have played a crucial role in refining and improving this project.
-
-### Conclusion
-
-This project would not have been possible without the dedication, collaboration, and continuous support of everyone involved. I look forward to future endeavors and the opportunity to contribute to more impactful projects.
-
-Thank you, 
-[Rivansh](mailto:rivansh63@gmail.com)
+Thank you for visiting!
