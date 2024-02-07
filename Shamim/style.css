@@ -363,9 +363,9 @@ background-color:white;
     
 }
 .button button{
-    margin-left: -10px;
+    margin-left: 10px;
     height: 50px;
-    width: 120px;
+    width: 130px;
     color: white;
     background-color: rgb(181, 69, 16);
     border: none;
