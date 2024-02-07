@@ -177,7 +177,7 @@ background-color:white;
    
    .venue0{
     width: 60vw;
-    height: 400vh;
+    height: 300vh;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 1px  rgb(145, 143, 143), -0px 0px 1px  rgb(84, 83, 83);
@@ -193,7 +193,6 @@ background-color:white;
     flex-shrink: 2;
    }
    
-
     .second1{
         height: 150px;
         width: 500px;
@@ -344,7 +343,14 @@ background-color:white;
     position: absolute;
     z-index: 1;
     margin-top: 165px;
-    margin-left: -115px;
+    margin-left: -165px;
+    /* height: 100px; */
+}
+.dottedLine1{
+    position: absolute;
+    z-index: 1;
+    margin-top: 165px;
+    margin-left: -165px;
     /* height: 100px; */
 }
 .second2{
@@ -367,7 +373,7 @@ background-color:white;
 }
 .button button{
     /* margin-left: 10px; */
-    height: 50px;
+    height: 40px;
     width: 130px;
     color: white;
     background-color: rgb(181, 69, 16);
