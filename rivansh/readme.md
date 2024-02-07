@@ -21,8 +21,6 @@ In this section, we aim to display statistical analysis and points table for the
 - HTML
 - Tailwind CSS
 
-## Images
-
 ### IPLT20 Project
 
 #### Stats and Points Table
