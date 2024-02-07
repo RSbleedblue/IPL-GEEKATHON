@@ -5,7 +5,7 @@
 }
 .body{
     width: 100vw;
-    
+    /* overflow-x: hidden; */
 }
 .allsection{ 
     background-image: url(https://www.iplt20.com/assets/images/bottom-section-bg.svg);
@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    overflow-x: hidden;
     
 }
 .header{
@@ -135,6 +136,7 @@ background-color:white;
     }
     .header{
         width: 110vw;
+       
     }
     .salector{
         display: flex;
@@ -142,7 +144,6 @@ background-color:white;
         justify-content: center;
         flex-wrap: wrap;
         width: 600px;
-
     }
    
     .threePoint{
@@ -307,9 +308,9 @@ background-color:white;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 1px  rgb(145, 143, 143), -0px 0px 1px  rgb(84, 83, 83);
-   
     position: relative;
-   
+     overflow-y: hidden;
+     
   
 }
 .first p{
@@ -391,6 +392,7 @@ background-color:white;
     display: flex;
     margin: 10px;
     align-items: center;
+
 }
  .final{
     height: 30px;
