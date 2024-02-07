@@ -1,11 +1,821 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Basic styling for demonstration purposes */
+    .header-main ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(19, 60, 136);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      font-weight: 600;
+    }
+
+    .header-main li {
+      /* float: left; */
+      margin-left: 20px;
+    }
+
+    .header-main li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .header-main li a:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    .header-main .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fffcfc;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .header-main .dropdown-content a {
+      color: rgb(0, 0, 0);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .header-main .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .header-main .search-icon {
+      /* float: right; */
+      padding: 10px;
+      /* margin-left: auto; */
+    }
+    .header-main .fa-solid.fa-chevron-down {
+      font-size: 15px;
+    }
+  </style>
+
+
 </head>
 <body>
+
+    <div class="header-main">
+        <div class="ap-stripWht py-2" style="color: white; background-color: #18184a;">
+            <div class="flex container pe-0">
+                <div class="d-flex justify-content-between flex">
+                    <span class="flex" style="display: flex; align-items: center;">
+                        <!--  <a href="" target="_blank" class="text-white"><img style="width:34px" src="https://www.iplt20.com/assets/images/headeripllogo.svg" alt="IPl Logo">2023</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; -->
+                         <a class="flex ml-24 font-sans" style="color: white; font-family: sans-serif; font-size: 14px; align-items: center; display: inline-flex;" href="index.html" target="_blank"><img style="margin-left: 76px;" src="https://www.iplt20.com/assets/images/BCCI_logo.png" alt="BCCI Logo">BCCI.TV</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                         <a style="align-items: center;" href="https://www.wplt20.com/" target="_blank"><img style="height:22px;width:auto;" src="https://www.iplt20.com/assets/images/womens-premier-league-logo.svg" alt="WPL Logo"></a>
+                     </span>
+                    <span class="flex ap-socialDiv" style="display: flex; margin-top: -26px;">
+                        <span style="margin-left: 1208px; font-size: 14px;">Follow Us</span>
+                        <a data-title="thread" href="https://www.threads.net/@iplt20" target="_blank" class="twit">
+                            <img style="margin-left: 20px;" src="https://www.iplt20.com/assets/images/thread-icon.svg" alt="threads">
+                        </a>
+                        <a data-title="twitter" href="https://twitter.com/IPL" target="_blank" class="twit">
+                            <img style="margin-left: 20px;" src="https://www.iplt20.com/assets/images/new-twitter-icon.svg" alt="twitter">
+                        </a>
+                        <a data-title="instagram" href="https://www.instagram.com/iplt20/" target="_blank" class="insta">
+                            <img style="margin-left: 20px;" src="https://www.iplt20.com/assets/images/new-instagram-icon.svg" alt="instagram">
+                        </a>
+                        <a data-title="facebook" href="https://www.facebook.com/IPL/" target="_blank" class="fb">
+                            <img style="margin-left: 20px;" src="https://www.iplt20.com/assets/images/new-facebook-icon.svg" alt="facebook">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class=" mx-auto"> -->
+        <!-- second nav bar -->
+        <div class="sticky top-0 z-10" style="position: sticky">
+          <ul
+            class="navbar_2"
+            style="
+              display: flex;
+              align-items: center;
+              background-image: url(https://www.iplt20.com/assets/images/header-curl-bg.svg);
+            "
+          >
+            <!-- background image 2nd nav bar -->
+            <a href="#" style="height: 44px">
+              <img
+                style="height: 44px"
+                class="lazy"
+                src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png"
+                alt=""
+              />
+            </a>
+            <li style="margin-left: 200px">
+              <a href="Shamim/index.html">MATCHES </a>
+            </li>
+            <li class="dropdown">
+              <a href="jiswant/All/index.html" class="dropbtn"
+                >VIDEOS <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="jiswant/Latest/index.html">LATEST</a>
+                <a href="jiswant/HighLights/index.html">HIGHLIGHTS</a>
+                <a href="jiswant/Auction/index.html">AUCTION</a>
+                <a href="jiswant/Magic Moments/index.html">MAGIC MOMENTS</a>
+                <a href="jiswant/Interviews/index.html">INTERVIEWS</a>
+                <a href="jiswant/Press Conference/index.html">PRESS CONFERENCE</a>
+                <a href="jiswant/All/index.html">ALL</a>
+              </div>
+            </li>
+            <li><a href="rivansh/stats/index.html">STATS</a></li>
+            <li><a href="rivansh/pointsTable/index.html">POINTS TABLE</a></li>
+            <li><a href="">TEAMS</a></li>
+            <li class="dropdown">
+              <a href="#news" class="dropbtn"
+                >NEWS<i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#all-news">ALL NEWS</a>
+                <a href="#announcements">ANNOUNCEMENTS</a>
+                <a href="#match-reports">MATCH REPORTS</a>
+                <a href="jiswant/Interviews/index.html">INTERVIEWS</a>
+              </div>
+            </li>
+            <li><a href="Sumit/index.html">AUCTION</a></li>
+            <li class="dropdown">
+              <a href="#more" class="dropbtn"
+                >MORE<i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="#about">ABOUT</a>
+                <a href="#mobile-products">MOBILE PRODUCTS</a>
+                <a href="#photos">PHOTOS</a>
+                <a href="#venues">VENUES</a>
+                <a href="#fantasy">FANTASY</a>
+              </div>
+            </li>
+            <li class="ml-16">
+              <!-- fanPoll logo -->
+              <img
+                class="w-16 cursor-pointer"
+                src="https://www.iplt20.com/assets/images/fan-poll.svg"
+                alt=""
+              />
+            </li>
+            <!-- search icon -->
+            <li style="margin-left: 0px" class="search-icon">
+              <a href="#search">
+                <img
+                  src="https://www.iplt20.com/assets/images/new-search-icon.svg"
+                  alt="Search Icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div style="width: 100%;">
+    <img style="width: 100%;" src="https://assets.iplt20.com/bcci/articles/1705565405_IPL%20Logo.webp" alt="">
+    <div>
+        <h2 style="overflow: overlay; margin-top: -350px; color: white; font-size: 50px; margin-left: 100px;  width: 512px;">BCCI announces the release of Request for...</h2>
+        <h3 style="margin-left: 100px; color: white;">18 Jan, 2024</h3>
+        <button class="mine-orange" style="margin-top: 24px; margin-left: 102px; padding: 10px 10px 10px 10px; font-size: large; font-style: italic; cursor: pointer;">Read More</button>
+    </div>
+</div>
+
+<section class="card-container" style="margin-top: 140px; background-color: #18184a; height: 400px;">
+    <div class="card-container-mine" style="display: flex; flex-direction: row; padding-top: 90px;">
+        <div class="card">
+            <img style="width: 100%; height: auto;" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1703145442_200x200_91803_1703145442.png" alt="">
+            <p style="font-weight: bolder; text-align: center;">Auction 2024</p>
+        </div>
+        <div class="card">
+            <img style="width: 100%; height: auto;" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1685368319_200x200_25300_1685368319.png" alt="">
+            <p style="font-weight: bolder; text-align: center;">FINAL 🏆</p>
+        </div>
+        <div class="card">
+            <img style="width: 100%; height: auto;" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1685111724_200x200_3741_1685111724.JPG" alt="">
+            <p style="font-weight: bolder; text-align: center;">Qualifier 2</p>
+        </div>
+        <div class="card">
+            <img style="width: 100%; height: auto;" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1684936095_200x200_4639_1684936095.jpg" alt="">
+            <p style="font-weight: bolder; text-align: center;">Eliminator</p>
+        </div>
+        <div class="card">
+            <img style="width: 100%; height: auto;" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1684852217_200x200_32984_1684852217.jpg" alt="">
+            <p style="font-weight: bolder; text-align: center;">Qualifier 1</p>
+        </div>
+        <div class="card">
+            <img style="width: 100%; height: auto;" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1684680327_200x200_96112_1684680327.JPG" alt="">
+            <p style="font-weight: bolder; text-align: center;">RCBvGT</p>
+        </div>
+        <div class="card">
+            <img style="width: 100%; height: auto;" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1684662186_200x200_37474_1684662186.jpg" alt="">
+            <p style="font-weight: bolder; text-align: center;">MIvSRH</p>
+        </div>
+        <div class="card">
+            <img style="width: 100%; height: auto;" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/story/1684591111_200x200_73005_1684591111.jpg" alt="">
+            <p style="font-weight: bolder; text-align: center;">KKRvLSG</p>
+        </div>
+</div>
+  </section>
+
+<!--Magic Moments starts here -->
+
+  <div class="mainBodyMM">
+    <div class="container3MM">
+        
+
+        <div class="gridContainerMM">
+            <div class="latestMM">
+                <h4 style="color: white;">Magic Moments</h4>
+            </div>
+
+            <div class="gridContainer2MM">
+                <div class="gridViewMM">
+
+                    <!-- first -->
+                    <div class="insideGridViewMM">
+                        <div class="imageMM">
+                            <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/2c7f4930-be56-4a57-ac5d-a1369e72cb3d/01226604-ee83-44fb-9ffa-a78a347af14c/1280x720/match/image.jpg" alt="grid.img">
+                            <span></span>
+                        </div>
+
+                        <div class="imageDetailsMM">
+                            <div class="imageDetails2MM">
+                                <h3>Game-Changing Over: 6,4,6,W,W - Rayudu, Mohit, Dhoni and a tale of roller-coaster 13th over</h3>
+                                <span>
+                                    <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share-gray.svg" alt>
+                                </span>
+                            </div>
+                            <div class="bottomDetailsMM">
+                                <p><span>29 May, 2023</span> |
+                                <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt> 2.8m</span></p>
+
+                                <p>
+                                    <span>14:55 mins</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second -->
+                    <div class="insideGridViewMM">
+                        <div class="imageMM">
+                            <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/1b1d2da2-69ed-4477-a89a-eb2820fee324/81d65fa2-409c-4b20-900b-50edc2076b27/1280x720/match/image.jpg">
+                            <span></span>
+                        </div>
+
+                        <div class="imageDetailsMM">
+                            <div class="imageDetails2MM">
+                                <h3>GRANDSTAND FINISH: Sensational Jadeja wins 5th title for CSK with 6 & 4</h3>
+                                <span>
+                                    <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share-gray.svg" alt>
+                                </span>
+                            </div>
+                            <div class="bottomDetailsMM">
+                                <p><span>26 May, 2023</span> |
+                                <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt> 1.2m</span></p>
+
+                                <p>
+                                    <span>15:08 mins</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="insideGridViewMM">
+                        <div class="imageMM">
+                            <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/62c05ada-682a-49ce-900f-f4aaa725649e/8e7a9de9-75f1-4672-8f42-96f11aa83385/1280x720/match/image.jpg" alt="grid.img">
+                            <span></span>
+                        </div>
+
+                        <div class="imageDetailsMM">
+                            <div class="imageDetails2MM">
+                                <h3>Mohit Sharma's valiant 3/36</h3>
+                                <span>
+                                    <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share-gray.svg" alt>
+                                </span>
+                            </div>
+                            <div class="bottomDetailsMM">
+                                <p><span>19 Dec, 2023</span> |
+                                <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>2.2k</span></p>
+
+                                <p>
+                                    <span>16:11 mins</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="insideGridViewMM">
+                        <div class="imageMM">
+                            <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/e293e7bb-72a0-480a-8599-57a1360a8871/44b2b196-d93c-4089-82cc-b689c61743ab/1280x720/match/image.jpg" alt="grid.img">
+                            <span></span>
+                        </div>
+
+                        <div class="imageDetailsMM">
+                            <div class="imageDetails2MM">
+                                <h3>6 & 6: Powerful Dube smashes couple of crucial maximums</h3>
+                                <span>
+                                    <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share-gray.svg" alt>
+                                </span>
+                            </div>
+                            <div class="bottomDetailsMM">
+                                <p><span>19 Dec, 2023</span> |
+                                <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>18.4k</span></p>
+
+                                <p>
+                                    <span>09:53 mins</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="insideGridViewMM">
+                        <div class="imageMM">
+                            <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/444c8e27-9ccd-44c2-a3b4-e1a53e494976/4f95fef1-ebcb-42e0-bb91-75f4d5bf5d3a/1280x720/match/image.jpg" alt="grid.img">
+                            <span></span>
+                        </div>
+
+                        <div class="imageDetailsMM">
+                            <div class="imageDetails2MM">
+                                <h3>Power & Panache: Rahane unfurls sublime sixes</h3>
+                                <span>
+                                    <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share-gray.svg" alt>
+                                </span>
+                            </div>
+                            <div class="bottomDetailsMM">
+                                <p><span>19 Dec, 2023</span> |
+                                <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>21.1k</span></p>
+
+                                <p>
+                                    <span>24:48 mins</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="insideGridViewMM">
+                        <div class="imageMM">
+                            <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/e45e13c6-de7d-4243-9e2c-dafe5549d394/e06203ff-5387-4b14-95e5-8e014e5d8d1c/1280x720/match/image.jpg">
+                            <span></span>
+                        </div>
+
+                        <div class="imageDetailsMM">
+                            <div class="imageDetails2MM">
+                                <h3>Double Delight: Noor removes Ruturaj, Conway in same over</h3>
+                                <span>
+                                    <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share-gray.svg" alt>
+                                </span>
+                            </div>
+                            <div class="bottomDetailsMM">
+                                <p><span>19 Dec, 2023</span> |
+                                <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>13.8k</span></p>
+
+                                <p>
+                                    <span>16:06 mins</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="insideGridViewMM">
+                        <div class="imageMM">
+                            <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/720adc4e-ab6e-4aa9-af43-7cb808ad66fa/84509ebb-06d4-4f99-bf81-f0f5c9f21cef/1280x720/match/image.jpg">
+                            <span></span>
+                        </div>
+
+                        <div class="imageDetailsMM">
+                            <div class="imageDetails2MM">
+                                <h3>Devon Conway sets the platform with authoritative 47(25)</h3>
+                                <span>
+                                    <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share-gray.svg" alt>
+                                </span>
+                            </div>
+                            <div class="bottomDetailsMM">
+                                <p><span>19 Dec, 2023</span> |
+                                <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>16k</span></p>
+
+                                <p>
+                                    <span>13:14 mins</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="insideGridViewMM">
+                        <div class="imageMM">
+                            <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/b151b5dc-9ed4-462c-aea0-66f10f43a34d/15321d6c-da60-4d48-b346-61756b1f0637/1280x720/match/image.jpg">
+                            <span></span>
+                        </div>
+
+                        <div class="imageDetailsMM">
+                            <div class="imageDetails2MM">
+                                <h3>ELEGANT: Ruturaj's lovely lofted maximum off Rashid</h3>
+                                <span>
+                                    <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share-gray.svg" alt>
+                                </span>
+                            </div>
+                            <div class="bottomDetailsMM">
+                                <p><span>19 Dec, 2023</span> |
+                                <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>6.5k</span></p>
+
+                                <p>
+                                    <span>05:31 mins</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>  
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+<!-- Latest Videos starts here -->
+
+<div class="gridContainer">
+    <div class="latest" style="padding-top: 74px; margin-left: 15px; color: white;">
+        <h4 style="color: white;">Latest Videos</h4>
+    </div>
+
+    <div class="gridContainer2">
+        <div class="gridView" style="margin-left: 15px;">
+
+            <!-- first -->
+            <div class="insideGridView">
+                <div class="image">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/videos/1703399918_WhatsApp%20Image%202023-12-24%20at%2012.07.50%20PM.jpeg" alt="grid.img">
+                    <span></span>
+                </div>
+
+                <div class="imageDetails">
+                    <div class="imageDetails2">
+                        <h3>Top buys from IPL Player Auction 2024</h3>
+                        <span>
+                            <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share.svg" alt>
+                        </span>
+                    </div>
+                    <div class="bottomDetails">
+                        <p><span>20 Dec, 2023</span> |
+                        <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>178.4k</span></p>
+
+                        <p>
+                            <span>48:58 mins</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second -->
+            <div class="insideGridView">
+                <div class="image">
+                    <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/2b46e7c3-ffdd-4029-b942-6b99882d882e/c8a39edf-d5ca-4760-89e3-b6400bd99b8d/1280x720/match/image.jpg" alt="grid.img">
+                    <span></span>
+                </div>
+
+                <div class="imageDetails">
+                    <div class="imageDetails2">
+                        <h3>IPL has been a great talent-nurturing ground for cricketers across the world: Sanjiv Goenka</h3>
+                        <span>
+                            <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share.svg" alt>
+                        </span>
+                    </div>
+                    <div class="bottomDetails">
+                        <p><span>19 Dec, 2023</span> |
+                        <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>36k</span></p>
+
+                        <p>
+                            <span>03:32 mins</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="insideGridView">
+                <div class="image">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/bcci/videos/1703480572_WhatsApp%20Image%202023-12-25%20at%2010.17.06%20AM.jpeg" alt="grid.img">
+                    <span></span>
+                </div>
+
+                <div class="imageDetails">
+                    <div class="imageDetails2">
+                        <h3>Mitchell Starc becomes the most expensive player in IPL Auction history</h3>
+                        <span>
+                            <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share.svg" alt>
+                        </span>
+                    </div>
+                    <div class="bottomDetails">
+                        <p><span>19 Dec, 2023</span> |
+                        <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>2.2k</span></p>
+
+                        <p>
+                            <span>16:11 mins</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="insideGridView">
+                <div class="image">
+                    <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/68d3d7e4-8c1a-4bdb-9c39-45c620f0ae4f/65dd936c-276d-475b-bbec-bf1b2f6090e0/1280x720/match/image.jpg" alt="grid.img">
+                    <span></span>
+                </div>
+
+                <div class="imageDetails">
+                    <div class="imageDetails2">
+                        <h3>2024  IPL Player Auction - Gujarat Titans</h3>
+                        <span>
+                            <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share.svg" alt>
+                        </span>
+                    </div>
+                    <div class="bottomDetails">
+                        <p><span>19 Dec, 2023</span> |
+                        <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>18.4k</span></p>
+
+                        <p>
+                            <span>09:53 mins</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="insideGridView">
+                <div class="image">
+                    <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/05d44278-a452-42fe-a958-dbc7a4265ab0/ae7df265-b413-4133-a533-69efdfef6b9b/1280x720/match/image.jpg" alt="grid.img">
+                    <span></span>
+                </div>
+
+                <div class="imageDetails">
+                    <div class="imageDetails2">
+                        <h3>2024  IPL Player Auction - Sunrisers Hyderabad</h3>
+                        <span>
+                            <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share.svg" alt>
+                        </span>
+                    </div>
+                    <div class="bottomDetails">
+                        <p><span>19 Dec, 2023</span> |
+                        <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>21.1k</span></p>
+
+                        <p>
+                            <span>24:48 mins</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="insideGridView">
+                <div class="image">
+                    <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/1f13631f-6b07-4bae-94e7-85df4a9ab4aa/c31294c8-2932-4ad4-a55c-61645b1f755b/1280x720/match/image.jpg" alt="grid.img">
+                    <span></span>
+                </div>
+
+                <div class="imageDetails">
+                    <div class="imageDetails2">
+                        <h3>2024  IPL Player Auction - Kolkata Knight Riders</h3>
+                        <span>
+                            <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share.svg" alt>
+                        </span>
+                    </div>
+                    <div class="bottomDetails">
+                        <p><span>19 Dec, 2023</span> |
+                        <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>13.8k</span></p>
+
+                        <p>
+                            <span>16:06 mins</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="insideGridView">
+                <div class="image">
+                    <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/8f1cc03d-3113-4805-8846-d20d9b5f8839/f2e95cff-d7bf-4542-b650-1b5801d68a6b/1280x720/match/image.jpg">
+                    <span></span>
+                </div>
+
+                <div class="imageDetails">
+                    <div class="imageDetails2">
+                        <h3>2024  IPL Player Auction - Royal Challengers Bangalore</h3>
+                        <span>
+                            <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share.svg" alt>
+                        </span>
+                    </div>
+                    <div class="bottomDetails">
+                        <p><span>19 Dec, 2023</span> |
+                        <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>16k</span></p>
+
+                        <p>
+                            <span>13:14 mins</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="insideGridView">
+                <div class="image">
+                    <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/eec2c232-4ab6-4e48-9a0f-dbb63556a1ef/ce61801a-4876-4c89-a46b-3fbdcae50c2d/1280x720/match/image.jpg">
+                    <span></span>
+                </div>
+
+                <div class="imageDetails">
+                    <div class="imageDetails2">
+                        <h3>2024  IPL Player Auction - Lucknow Super Giants</h3>
+                        <span>
+                            <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share.svg" alt>
+                        </span>
+                    </div>
+                    <div class="bottomDetails">
+                        <p><span>19 Dec, 2023</span> |
+                        <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>6.5k</span></p>
+
+                        <p>
+                            <span>05:31 mins</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="insideGridView">
+                <div class="image">
+                    <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/6dcd9f2e-062e-4788-9b45-5d57344e24ef/d93dff91-a388-40ee-bff3-d278b65bdaed/1280x720/match/image.jpg">
+                    <span></span>
+                </div>
+
+                <div class="imageDetails">
+                    <div class="imageDetails2">
+                        <h3>2024  IPL Player Auction - Rajasthan Royals</h3>
+                        <span>
+                            <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share.svg" alt>
+                        </span>
+                    </div>
+                    <div class="bottomDetails">
+                        <p><span>19 Dec, 2023</span> |
+                        <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>7.5k</span></p>
+
+                        <p>
+                            <span>11:45 mins</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="insideGridView">
+                <div class="image">
+                    <img src="https://cf-images.eu-west-1.prod.boltdns.net/v1/static/3588749423001/324d2a99-3a5a-4014-b8a9-c6afea73f97f/349c2525-f759-4900-a0ea-d750068229ca/1280x720/match/image.jpg">
+                    <span></span>
+                </div>
+
+                <div class="imageDetails">
+                    <div class="imageDetails2">
+                        <h3>2024 IPL Player Auction - Chennai Super Kings</h3>
+                        <span>
+                            <img style="width: 35px;" src="https://www.iplt20.com/assets/images/new-icon-share.svg" alt>
+                        </span>
+                    </div>
+                    <div class="bottomDetails">
+                        <p><span>19 Dec, 2023</span> |
+                        <span><img style="height: 12px;" src="https://www.iplt20.com/assets/images/new-eye.svg" alt>30.2k</span></p>
+
+                        <p>
+                            <span>05:31 mins</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="app" style="display: inline-block; flex-flow: row wrap; width: 84%; padding-left: 154px; color: white;">
+        <div class="app-content" style="width: calc(50%-80px); float: left; text-align: left; width: 512px; margin-top: 224px;">
+            <h2 class="w-100 mb-4" style="font-size: 50px; line-height: 60px; color: #fff; font-family: bebas_neueregular;">Get the official IPL App</h2>
+            <p class="mb-4" style="font-size: 18px;">Get the latest scores on the go. Find the latest content, including match highlights, press conferences and recap all at your fingertips by downloading the official IPL app.</p>
+
+            <p class="mb-4" style="font-size: 18px;">Available on both App store and Playstore. </p>
+            <p class="mb-4">
+                <b>Download here for free.</b>
+            </p>
+
+            <div class="small-apps" style="display: flex; justify-content: flex-start;">
+                <div class="small-aap">
+                    <img src="https://www.iplt20.com/assets/images/play-store.png" alt="">
+                    <img src="https://www.iplt20.com/assets/images/app-store.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="app-image" style="width: calc(52%-60px); float: right; position: relative; bottom: 0; right: 0; margin-right: 175px;">
+        <img style="width: 85%; margin-top: 100px;" class="lazy" src="https://www.iplt20.com/assets/images/hand-mobile.png" alt=""></div>
+    </div>
+
+
+
+
+<div class="foot"  style="margin-top: 190px; background-color: black; color: white;">
+    <div>
+        <div>
+            <div style="justify-content: space-between;">
+                <div style="display: flex; padding-top: 60px;">
+                    <div style=" margin-left: 120px;">
+                        <h2>Teams</h2>
+                        <ul style="display: flex; flex-direction: column; justify-content: space-around; background-color: black; font-size: small; padding-top: 15px;">
+                            <li style="padding-top: 10px;">Chennai Super Kings</li>
+                            <li style="padding-top: 10px;">Delhi Capitals</li>
+                            <li style="padding-top: 10px;">Gujarat Titans</li>
+                            <li style="padding-top: 10px;">Kolkata Knight Riders</li>
+                            <li style="padding-top: 10px;">Lucknow Super Giants</li>
+                            <li style="padding-top: 10px;">Mumbai Indians</li>
+                            <li style="padding-top: 10px;">Punjab Kings</li>
+                            <li style="padding-top: 10px;">Rajasthan Royals</li>
+                            <li style="padding-top: 10px;">Royal Challengers Bangalore</li>
+                            <li style="padding-top: 10px;">Sunrisers Hyderabad</li>
+                        </ul>
+                    </div>
+
+                    <div  style="margin-left: 120px;">
+                        <h2>ABOUT</h2>
+                        <ul  style="font-size: small; display: flex; flex-direction: column; background-color: black; padding-top: 15px;">
+                            <li style="padding-top: 10px;">About Us</li>
+                            <li style="padding-top: 10px;">Anti Corruption Policy</li>
+                            <li style="padding-top: 10px;">Anti Doping Policy</li>
+                            <li style="padding-top: 10px;">TUE Application Form</li>
+                            <li style="padding-top: 10px;">Anti Discrimination Policy</li>
+                            <li style="padding-top: 10px;">Clothing And Equipment Regulations</li>
+                            <li style="padding-top: 10px;">Code Of Conduct For Players And Teams Officials</li>
+                            <li style="padding-top: 10px;">News Access Regulations</li>
+                            <li style="padding-top: 10px;">Image Use Terms</li>
+                        </ul>
+                    </div>
+
+                    <div  style="margin-left: 120px;">
+                        <h2>GUIDELINES</h2>
+                        <ul style="font-size: small; display: flex; flex-direction: column; background-color: black; padding-top: 15px;">
+                            <li style="padding-top: 10px;">IPL Code Of Conduct For Match Officials</li>
+                            <li style="padding-top: 10px;">Brand And Protection Guidelines</li>
+                            <li style="padding-top: 10px;">Governing Council</li>
+                            <li style="padding-top: 10px;">Match Playing Conditions</li>
+                            <li style="padding-top: 10px;">PMOA Minimum Standard</li>
+                            <li style="padding-top: 10px;">Suspect Action Policy</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-left: 120px;">
+                        <h2>CONTACT</h2>
+                        <ul style="font-size: small; display: flex; flex-direction: column; background-color: black; padding-top: 15px;">
+                            <li style="padding-top: 10px;">Contact Us</li>
+                            <li style="padding-top: 10px;">Sponsorship</li>
+                            <li style="padding-top: 10px;">Privacy Policy</li>
+                        </ul>
+                    </div>
+                                                                   
+                                
+                   
+                                           
+                    
+                                           
+                    
+                                            
+                                            
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <div class="ap-copy col-100 floatLft" style="padding-bottom: 15px; text-align: center;">
+        <p class="mb-0 w-100 text-center">Copyright © IPL 2024 All Rights Reserved.</p>
+    </div>
+</div>
 </body>
 </html>
