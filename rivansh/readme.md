@@ -26,8 +26,7 @@ In this section, we aim to display statistical analysis and points table for the
 ### IPLT20 Project
 
 #### Stats and Points Table
-
-![Stats and Points Table]([link_to_image](https://rsbleedblue.github.io/IPL-GEEKATHON/rivansh/stats/index.html#points-table))
+([link_to_image][(https://rsbleedblue.github.io/IPL-GEEKATHON/rivansh/stats/index.html#points-table)](https://rsbleedblue.github.io/IPL-GEEKATHON/))
 
 ## Acknowledgement
 
@@ -50,4 +49,5 @@ I appreciate the feedback and support received from my peers, mentors, and the o
 
 This project would not have been possible without the dedication, collaboration, and continuous support of everyone involved. I look forward to future endeavors and the opportunity to contribute to more impactful projects.
 
-Thank you, [Rivansh](mailto:rivansh63@gmail.com)
+Thank you, 
+[Rivansh](mailto:rivansh63@gmail.com)
