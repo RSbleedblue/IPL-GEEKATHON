@@ -306,7 +306,7 @@ background-color:white;
     align-items: center;
     flex-direction: column;
     width: 85vw;
-    height: 350vh;
+    height: 353vh;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 1px  rgb(145, 143, 143), -0px 0px 1px  rgb(84, 83, 83);
@@ -437,7 +437,7 @@ background-color:white;
     font-size: 10px;
     line-height: 18px;
     margin-left: 30px;
-    margin-top: 15px;
+    margin-top: 60px;
     gap: 10px;
  }
  .Horizontalline hr{
