@@ -352,6 +352,7 @@ background-color:white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: -20px;
     /* margin-left: 20px; */
     /* border: 1px solid black; */
 }
@@ -364,7 +365,7 @@ background-color:white;
     
 }
 .button button{
-    margin-left: 10px;
+    /* margin-left: 10px; */
     height: 50px;
     width: 130px;
     color: white;
@@ -373,6 +374,7 @@ background-color:white;
     border-radius: 5px;
     transform: skew(-20deg);
     cursor: pointer;
+    margin-top: 50px;
     margin-left: 50px;
 }
 .icon1 img{
@@ -437,10 +439,11 @@ background-color:white;
     font-size: 10px;
     line-height: 18px;
     margin-left: 30px;
-    margin-top: 60px;
+    margin-top: 30px;
     gap: 10px;
  }
  .Horizontalline hr{
+    width: 85vw;
        color:rgb(84, 83, 83) ;
  }
 .dottedLine hr{
