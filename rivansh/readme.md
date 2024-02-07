@@ -34,6 +34,6 @@ Your feedback is valuable! If you have any suggestions or improvements for this 
 
 ## Contact
 
-For any inquiries or collaborations, you can reach out to me via email at [your_email@example.com](mailto:rivansh63@gmail.com).
+For any inquiries or collaborations, you can reach out to me via email at [rivansh63@gmail.com](mailto:rivansh63@gmail.com).
 
 Thank you for visiting!
