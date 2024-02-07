@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    script{
+        display: none;
+    }
+     /* container list */
+    div.containerPC{
+        margin-top: 5px;
+    width: 100%;
+    background-color: #061e59;
+    color: white;
+    } 
+    .container2PC{
+    padding-left: 80px;
+    width: 70%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    .container2PC a{
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+        font-family: Rubik,sans-serif;
+    }
+    .highlightActionPC{
+        width: 100%;
+        position: relative;
+        
+    }
+    
+    .highlightActionPC img{
+        width: 100%;
+        height: 500px;
+    }
+
+    /* <!-- highlight details --> */
+    .highlightDetailsPC{
+        position: absolute;
+        width: 40%;
+        left: 76px;
+        top: calc(100% - 370px);
+        display: block;
+    }
+
+    .divVideoPC{
+        margin-top: 10px;
+        width: 100%;
+        transform: skew(336deg);
+    }
+    .VideoButtonPC{
+        background-color: #dc5034;
+        color: white;
+        font-family: bebas_neueregular;
+        font-size: 15px;
+        padding: 4px 10px;
+        
+    }
+     .divVideoH2PC{
+        color: white;
+        font-size: 40px;
+        line-height: 1.2;
+        margin-top: 20px;
+        font-family: bebas_neueregular;
+     }
+
+     .divVideoH3PC{
+        color: rgb(255, 255, 255, 85%);
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 1px;
+     }
+     .playSharePC{
+        display: flex;
+        flex-wrap: wrap;
+     }
+     .divVideo1PC{
+        margin-top: 30px;
+        transform: skew(336deg);
+     }
+
+     .playSpanPC{
+        background-color: #dc5034;
+        font-size: 20px;
+        padding: 5px 22px;
+        color: white;
+        font-weight: 500;
+        transform: skew(336deg);
+     }
+     .highlightSharePC{
+        margin-top: 17px;
+        margin-left: 45px;
+        border: 1px solid white;
+        border-radius: 5px;
+     }
+     /* <!-- highlight details --> */
+    
+    /* mainBody */
+    .mainBodyPC{
+        width: 100%;
+        background-color: #f0f2f8;
+        background-image: url(https://www.iplt20.com/assets/images/bottom-section-bg.svg);
+        background-size: 120%;
+        display: flex;
+        flex-wrap: wrap;
+        background-position: center top;
+        background-repeat: repeat-y;
+    
+    }
+    
+    .container3PC{
+        padding-top: 29px;
+       padding-left: 105px;
+       padding-right: 105px; 
+       
+    }
+    
+    
+    .listPC select{
+      /* background-image: url(https://www.iplt20.com/assets/images/drop_down.png); */
+      background-repeat: no-repeat;
+      background-position: calc( 100% - 14px ) center;
+      font-size: 18px;
+      background-color: white;
+      font-family: 'bebas_neueregular';
+      border: 1px solid black;
+      border-radius: 4px;
+      color: black;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 6px 20px 6px 16px;
+    }
+    
+    /* gridContainer */
+    .gridContainerPC{
+    
+    }
+    
+    .latestPC{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .latestPC h4{
+        font-size: 26px;
+        font-weight: Bold;
+        font-style: italic;
+        font-family: Rubik,sans-serif;
+        color: black;
+    }
+    .gridContainer2PC{
+        width: 100%;
+    }
+    .gridViewPC{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 1.3%;
+    }
+    .insideGridViewPC{
+        background-color: #fcfcfd;
+        width: 270px;
+        overflow: hidden;
+        border-radius: 14px;
+        cursor: pointer;
+    }
+    .imagePC{
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 14px;
+    }
+    .imagePC img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .imagePC::after{
+        content: " ";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background: linear-gradient(0deg,#000 0,rgba(0,0,0,0) 50%);
+    }
+    .imagePC span{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background: url(https://www.iplt20.com/assets/images/new-slide-play-icon.svg) 0 0/100% 100% no-repeat;
+        z-index: 2;
+        bottom: 18px;
+        left: 18px;
+    }
+    .imageDetailsPC{
+        padding: 14px;
+        color: black;
+        font-family: bebas_neueregular;
+        overflow: hidden;
+    }
+    .imageDetailsPC h3{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        height: 3rem;  
+    }
+    .imageDetails2PC{
+        display: flex;
+    }
+    
+    .bottomDetailsPC{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        margin: 0px;
+        justify-content: space-between !important;
+        border-top: 1px solid rgba(232, 232, 232, .2);
+    }
+    
+    .bottomDetailsPC p{
+        color: rgba(58, 57, 57, 0.5);
+        font-size: 12px;
+    }
+    
+    .loadMorePC{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .loadMoreLinkPC{
+        background: #dc5034;
+        color: #fff;
+        border-radius: 3px;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px 40px;
+        transition: .3s;
+        border: 1px solid transparent;
+        transform: skew(336deg);
+        cursor: pointer;
+    }
+    
