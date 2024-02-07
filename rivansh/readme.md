@@ -30,10 +30,10 @@ I would like to express my gratitude to **[Geekster](https://www.geekster.in/)**
 
 ## Feedback
 
-Your feedback is valuable! If you have any suggestions or improvements for this project, feel free to [open an issue](https://github.com/rsbleedblue/IPL-GEEKATHON/issues/new) or submit a pull request.
+Your feedback is valuable! If you have any suggestions or improvements for this project.
 
 ## Contact
 
-For any inquiries or collaborations, you can reach out to me via email at [your_email@example.com](mailto:your_email@example.com).
+For any inquiries or collaborations, you can reach out to me via email at [your_email@example.com](mailto:rivansh63@gmail.com).
 
 Thank you for visiting!
