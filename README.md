@@ -1,4 +1,4 @@
-# ADIDAS.Co.in :running:
+# iplt20.com :running:
 
 ## HOSTED LINK OF OUR PROJECT
 To explore the project, visit the [https://rsbleedblue.github.io/IPL-GEEKATHON/](#https://rsbleedblue.github.io/IPL-GEEKATHON/)
@@ -12,7 +12,7 @@ To explore the project, visit the [https://rsbleedblue.github.io/IPL-GEEKATHON/]
 6. [WEBSITE UI](#✈️website-ui)
 7. [CONCLUSION](#1-communication)
 ## :medal_sports:<span style="color:#29c4f6"> INTRODUCTION
-<i>"Welcome to adidas.co.in a UI-Based Website :globe_with_meridians:, where design meets functionality.In the dynamic realm of e-commerce,Our endeavor focused on elevating the digital presence of the Adidas brand through a comprehensive User Interface (UI) redesign. With a keen eye on blending aesthetics and functionality, our team aimed to create an immersive and user-friendly online platform for sports enthusiasts and fashion aficionados. The project encompassed a spectrum of tasks, ranging from reimagining the website's visual elements to enhancing the overall navigation and user experience. Through thoughtful design choices and seamless integration of interactive features, our goal was to establish a digital gateway that not only showcased Adidas' diverse product range but also provided a delightful and engaging journey for online shoppers. The project's success hinged on harmonizing the essence of the brand with the expectations of a modern, tech-savvy audience, resulting in a UI that resonates with Adidas' legacy while embracing contemporary digital trends."</i>
+<i>"Welcome to iplt20.com a UI-Based Website :globe_with_meridians:, where design meets functionality.In the dynamic realm of e-commerce,Our endeavor focused on elevating the digital presence of the Adidas brand through a comprehensive User Interface (UI) redesign. With a keen eye on blending aesthetics and functionality, our team aimed to create an immersive and user-friendly online platform for sports enthusiasts and fashion aficionados. The project encompassed a spectrum of tasks, ranging from reimagining the website's visual elements to enhancing the overall navigation and user experience. Through thoughtful design choices and seamless integration of interactive features, our goal was to establish a digital gateway that not only showcased Adidas' diverse product range but also provided a delightful and engaging journey for online shoppers. The project's success hinged on harmonizing the essence of the brand with the expectations of a modern, tech-savvy audience, resulting in a UI that resonates with Adidas' legacy while embracing contemporary digital trends."</i>
 ## :dart:<span style="color:#29c4f6">PROJECT 
 This project was assigned by <a href="#"><u>Geekster</u></a> as a Major Project for a team of 7 members :juggling_person: regarding Front-end web development.
     <ul type=none>
